@@ -39,7 +39,7 @@ brew install caskroom/cask/brew-cask
 
 # Internet
 brew cask install google-chrome
-brew cask install hazel
+brew cask install firefox
 brew cask install skype
 brew cask install battle-net
 brew cask install steam
@@ -61,12 +61,17 @@ brew cask install vlc
 brew cask install vox
 brew cask install vox-preferences-pane
 
-# Utiliries
+# utilities
 brew cask install flux
 brew cask install ccleaner
 brew cask install the-unarchiver
 brew cask install dash
 brew cask install iterm2
 brew cask install android-file-transfer
+brew cask install teamviewer
 
+# Remove outdated versions from the Cellar
 brew cleanup
+
+# Link .app files into /Applications
+brew linkapps
