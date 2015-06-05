@@ -1,0 +1,30 @@
+- shell:
+    - ["mkdir -p ~/.config/fish", "Checking folder structure exists"]
+
+- clean: ['~', "~/.config/fish"]
+
+- link:
+    ~/.dotfiles: ''
+    ~/.vim: vim/
+    ~/.vimrc: vimrc
+    ~/.zsh: zsh/
+    ~/.zshrc: zshrc
+    ~/.config/fish/config.fish : config/fish/config.fish
+    ~/.gitconfig:
+      create:     true
+      path:       gitfiles/gitconfig
+      backup:     ./backup
+      replace:    true
+    ~/.gitignore_global:
+      create:     true
+      path:       gitfiles/gitignore_global
+      backup:     ./backup
+      replace:    true
+    ~/bin:
+      create:     true
+      path:       bin/
+      backup:     ./backup
+      replace:    true
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
