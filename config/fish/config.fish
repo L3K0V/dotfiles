@@ -100,6 +100,8 @@ set -gx EDITOR vim
 
 set -gx JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
 
+[ -f /usr/local/share/autojump/autojump.fish ]; and . /usr/local/share/autojump/autojump.fish
+
 function pwd_prompt -d 'Print current working directory, using ~ instead of $HOME'
     echo $PWD | sed -e "s|^$HOME|~|"
 end

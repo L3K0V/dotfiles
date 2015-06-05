@@ -1,25 +1,42 @@
 - shell:
-    - ["mkdir -p ~/.config/fish", "Checking folder structure exists"]
+    - ["mkdir -p ~/.config/fish ~/.zsh", "Checking folder structure exists"]
 
-- clean: ['~', "~/.config/fish"]
+- clean: ['~', '~/.config/fish', '~/.zsh']
 
 - link:
     ~/.dotfiles: ''
     ~/.vim: vim/
     ~/.vimrc: vimrc
-    ~/.zsh: zsh/
+    ~/.zsh:
+      path: config/zsh/
+      replace: true
+      force: true
     ~/.zshrc: zshrc
+    ~/.zshenv:
+      path: zshenv
+      force: true
+      replace: true
+    ~/.zsh/.zsh_aliases:
+      path: zsh_aliases
+      force: true
+      replace: true
     ~/.config/fish/config.fish : config/fish/config.fish
+    ~/.bash_profile :
+      path: bash_profile
+      force: true
+      replace: true
     ~/.gitconfig:
       create:     true
       path:       gitfiles/gitconfig
       backup:     ./backup
       replace:    true
+      force:      true
     ~/.gitignore_global:
       create:     true
       path:       gitfiles/gitignore_global
       backup:     ./backup
       replace:    true
+      force:      true
     ~/bin:
       create:     true
       path:       bin/
