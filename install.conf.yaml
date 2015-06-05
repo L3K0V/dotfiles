@@ -16,7 +16,7 @@
       path: zshenv
       force: true
       replace: true
-    ~/.zsh/.zsh_aliases:
+    ~/.zsh_aliases:
       path: zsh_aliases
       force: true
       replace: true
