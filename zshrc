@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/lekov/.oh-my-zsh
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="vokela"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -9,11 +9,12 @@ ZSH_THEME="robbyrussell"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 
-plugins=(git brew autojump)
+plugins=(git brew autojump virtualenvwrapper virtualenv-prompt python pyenv)
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export MANPATH="/usr/local/man:$MANPATH"
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 
 source $ZSH/oh-my-zsh.sh
 
@@ -56,8 +57,8 @@ AUTOSUGGESTION_ACCEPT_RIGHT_ARROW=1
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [ -f "$HOME/.zsh/.zsh_aliases" ]; then
-    source "$HOME/.zsh/.zsh_aliases"
+if [ -f "$HOME/.zsh_aliases" ]; then
+    source "$HOME/.zsh_aliases"
 fi
 
 alias zshreload=". ~/.zshrc"

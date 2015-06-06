@@ -1,7 +1,7 @@
 - shell:
-    - ["mkdir -p ~/.config/fish ~/.zsh", "Checking folder structure exists"]
+    - ["mkdir -p ~/.config/fish ~/.zsh ~/.oh-my-zsh/custom/themes", "Checking folder structure exists"]
 
-- clean: ['~', '~/.config/fish', '~/.zsh']
+- clean: ['~', '~/.config/fish', '~/.zsh', '~/.oh-my-zsh/custom/themes']
 
 - link:
     ~/.dotfiles: ''
@@ -18,6 +18,10 @@
       replace: true
     ~/.zsh_aliases:
       path: zsh_aliases
+      force: true
+      replace: true
+    ~/.oh-my-zsh/custom/themes:
+      path: oh-my-zsh/custom/themes/
       force: true
       replace: true
     ~/.config/fish/config.fish : config/fish/config.fish
@@ -45,3 +49,4 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+# https://github.com/tonyseek/oh-my-zsh-virtualenv-prompt add later
