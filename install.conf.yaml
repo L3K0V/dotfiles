@@ -49,4 +49,3 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-# https://github.com/tonyseek/oh-my-zsh-virtualenv-prompt add later

@@ -8,10 +8,25 @@ PS. Until yesterday I hated missing of all kinds of aliases and commands shortcu
 First, backup. And second - easy manage under version control of all .files with all custom configurations plus some scripts for easy setup new environment.
 
 ## How to use it?
-Just clone and run ```install``` to link all configuration files
+Just clone and run ```install``` to link all configuration files.
 
-### brew
+But before that, maybe would be best to run all shell scripts to install and setup all necessary and unnecessary utilities and programs:
 
-### atom
+```shell
+$ ./atom.sh
+$ ./brew.sh
+$ ./atom.sh
+```
 
-### osx
+### brew.sh
+
+### atom.sh
+
+### osx.sh
+
+## Thanks to...
+
+- [kunev](https://github.com/kunev) - for awesome aliases and separated zsh files structure
+- [anishathalye](https://github.com/anishathalye) - for Dotbot and cool post
+inspirational post about dot files
+- [daviesjamie](https://github.com/daviesjamie) - without you I would't know about Fish shell.
