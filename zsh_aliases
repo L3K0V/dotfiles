@@ -1,11 +1,18 @@
 alias dotfiles='cd ~/Workspace/dotfiles'
+alias dots='cd ~/Workspace/dotfiles'
+
 alias workspace='cd ~/Workspace'
+alias work='cd ~/Workspace'
+
+alias fmi='cd ~/Workspace/fmi'
+
+alias elsys='cd ~/Workspace/elsys'
+alias tues='cd ~/Workspace/elsys'
 
 # Python
-alias pyserver='python -m http.server'
+alias pyserver='python3 -m http.server'
 alias py='python'
 alias py3='python3'
-alias pi3='pip3'
 
 alias grep='grep --color'
 
