@@ -41,6 +41,11 @@
       backup:     ./backup
       replace:    true
       force:      true
+    ~/.gitconfig.local:
+      create:     true
+      path:       gitfiles/gitconfig.local
+      replace:    true
+      force:      true
     ~/bin:
       create:     true
       path:       bin/

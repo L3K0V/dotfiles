@@ -1,3 +1,7 @@
+[include]
+  # For username / creds / etc
+  path = ~/.gitconfig.local
+
 [user]
   name = Asen Lekov
   email = asenlekoff@gmail.com
