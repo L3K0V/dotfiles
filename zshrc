@@ -10,22 +10,15 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 plugins=(git git-extras brew autojump virtualenvwrapper virtualenv-prompt python pyenv atom bower history-substring-search)
 
-# User configuration
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export MANPATH="/usr/local/man:$MANPATH"
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-
-# Add my bin to the path
-[ -d  "$HOME/bin" ] && PATH="$PATH:$HOME/bin"
+if [ -f ~/.bash_profile ]; then
+    source ~/.bash_profile
+fi
 
 source $ZSH/oh-my-zsh.sh
 
 # Config history
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
-
-autoload predict-on
-predict-on
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then

@@ -25,6 +25,10 @@
       force: true
       replace: true
     ~/.config/fish/config.fish : config/fish/config.fish
+    ~/.bashrc:
+      path: bashrc
+      force: true
+      repalce: true
     ~/.bash_profile :
       path: bash_profile
       force: true

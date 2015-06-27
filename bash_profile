@@ -1,5 +1,7 @@
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Workspace  #Not very important -- mkproject command uses this
+# Load in .bashrc -------------------------------------------------
+if [ -f ~/.bashrc ]; then
+  source ~/.bashrc
+fi
 
-#source /usr/local/bin/virtualenvwrapper.sh
-source /usr/local/bin/virtualenvwrapper.sh
+# Add my bin to the path
+[ -d  "$HOME/bin" ] && PATH="$PATH:$HOME/bin"
