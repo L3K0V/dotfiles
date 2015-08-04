@@ -9,6 +9,8 @@ alias fmi='cd ~/Workspace/fmi'
 alias elsys='cd ~/Workspace/elsys'
 alias tues='cd ~/Workspace/elsys'
 
+alias lifebelt='workon lifebelt && cd ~/Workspace/lifebelt'
+
 # Python
 alias pyserver='python3 -m http.server'
 alias py='python'

@@ -20,6 +20,10 @@
   cm = commit -m
 
   co = checkout
+  cob = checkout -b
+
+  undo = reset HEAD~1 --mixed
+  up = !git pull --rebase --prune $@ && git submodule update --init --recursive
 
   d = difftool
 
