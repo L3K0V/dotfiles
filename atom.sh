@@ -9,3 +9,4 @@ apm install atom-bootstrap3
 apm install jquery-snippets
 apm install atom-beautify
 apm install git-control
+apm install atom-material-ui atom-material-syntax atom-material-syntax-light

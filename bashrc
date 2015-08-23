@@ -6,6 +6,7 @@ fi
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export MANPATH="/usr/local/man:$MANPATH"
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # Load in .bashrc -------------------------------------------------
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
