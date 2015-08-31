@@ -16,7 +16,9 @@ alias pyserver='python3 -m http.server'
 alias py='python'
 alias py3='python3'
 
-alias pipu=pip list --outdated | sed 's/(.*//g' | xargs pip install -U
+# Update all outdated packages
+alias pipup="pip freeze --local | cut -d = -f 1  | xargs pip install -U"
+alias pipu="pip install -U"
 
 alias grep='grep --color'
 
