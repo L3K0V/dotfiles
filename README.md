@@ -13,12 +13,14 @@ Just clone and run ```install``` to link all configuration files.
 But before that, maybe would be best to run all shell scripts to install and setup all necessary and unnecessary utilities and programs:
 
 ```shell
-$ ./atom.sh
 $ ./brew.sh
 $ ./atom.sh
+$ ./osx.sh
 ```
 
 ### brew.sh
+
+Make sure you run this first, or before `atom.sh` because it atom is missing brew will install it :)
 
 ### atom.sh
 

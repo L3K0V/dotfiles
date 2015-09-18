@@ -43,7 +43,7 @@ brew cask install firefox
 brew cask install skype
 brew cask install battle-net
 brew cask install steam
-brew cask install utorrent
+brew cask install transmission
 brew cask install tunnelblick
 
 # Development
@@ -51,10 +51,13 @@ brew cask install android-studio
 brew cask install intellij-idea-ce
 brew cask install sourcetree
 brew cask install gitbook
-brew cask install github
+brew cask install github-desktop
 brew cask install eclipse-java
 brew cask install atom
 brew cask install textmate
+brew cask install paw
+brew cask install virtualbox
+brew cask install genymotion
 
 # Media
 brew cask install vlc
