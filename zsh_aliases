@@ -10,6 +10,7 @@ alias elsys='cd ~/Workspace/elsys'
 alias tues='cd ~/Workspace/elsys'
 
 alias lifebelt='workon lifebelt && cd ~/Workspace/lifebelt'
+alias swing='workon swing && cd ~/Workspace/sofia-swing-guide'
 
 # Python
 alias pyserver='python3 -m http.server'
