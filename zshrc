@@ -21,11 +21,11 @@ setopt hist_ignore_all_dups
 setopt hist_ignore_space
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='mvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -35,6 +35,14 @@ setopt hist_ignore_space
 
 if [ -f "$HOME/.zsh_aliases" ]; then
     source "$HOME/.zsh_aliases"
+fi
+
+if [ -f "$HOME/.zsh/bindkeys.zsh" ]; then
+    source "$HOME/.zsh/bindkeys.zsh"
+fi
+
+if [ -f "$HOME/.zsh/functions.zsh" ]; then
+    source "$HOME/.zsh/functions.zsh"
 fi
 
 alias zshreload=". ~/.zshrc"
