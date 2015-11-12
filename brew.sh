@@ -21,7 +21,6 @@ brew install findutils
 brew install bash
 
 # Install essential homebrews
-brew install hub # https://hub.github.com/
 brew install fish --HEAD # http://fishshell.com/
 brew install macvim --with-lua --custom-icons --override-system-vim --HEAD #
 brew install python

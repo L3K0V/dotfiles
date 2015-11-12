@@ -12,7 +12,7 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
 
   export WORKON_HOME=$HOME/.virtualenvs
-  export PROJECT_HOME=$HOME/Workspace  #Not very important -- mkproject command uses this
+  export PROJECT_HOME=$HOME/Workspace  # Not very important -- mkproject command uses this
 
   source /usr/local/bin/virtualenvwrapper.sh
 
