@@ -11,13 +11,13 @@
       path: config/zsh/
       replace: true
       force: true
-    ~/.zshrc: zshrc
+    ~/.zshrc: config/zsh/zshrc
     ~/.zshenv:
-      path: zshenv
+      path: config/zsh/zshenv
       force: true
       replace: true
     ~/.zsh_aliases:
-      path: zsh_aliases
+      path: config/zsh/zsh_aliases
       force: true
       replace: true
     ~/.oh-my-zsh/custom/themes:

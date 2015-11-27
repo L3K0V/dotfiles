@@ -1,9 +1,6 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
-[submodule "config/zsh/zsh-autosuggestions"]
-	path = config/zsh/zsh-autosuggestions
-	url = git://github.com/tarruda/zsh-autosuggestions
 [submodule "config/zsh/zsh-syntax-highlighting"]
 	path = config/zsh/zsh-syntax-highlighting
-	url = git://github.com/jimmijj/zsh-syntax-highlighting
+	url = git://github.com/zsh-users/zsh-syntax-highlighting
