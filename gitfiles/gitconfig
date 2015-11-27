@@ -50,6 +50,9 @@
 [push]
     default = current
 
+[branch]
+    autosetuprebase = always
+
 [color]
     branch = auto
     diff = auto
