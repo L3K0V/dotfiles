@@ -7,57 +7,24 @@
 
 - link:
     ~/.dotfiles: ''
-    ~/.zsh:
-      path: config/zsh/
-      replace: true
-      force: true
-    ~/.zshrc: 
-        path: config/zsh/zshrc
-        replace: true
-        force: true
-    ~/.zshenv:
-      path: config/zsh/zshenv
-      force: true
-      replace: true
-    ~/.zsh_aliases:
-      path: config/zsh/zsh_aliases
-      force: true
-      replace: true
-    ~/.oh-my-zsh/custom/themes:
-      path: oh-my-zsh/custom/themes/
-      force: true
-      replace: true
+    ~/.zsh: config/zsh/
+    ~/.zshrc: config/zsh/zshrc
+    ~/.zshenv: config/zsh/zshenv
+    ~/.zsh_aliases: config/zsh/zsh_aliases
+    ~/.oh-my-zsh/custom/themes: oh-my-zsh/custom/themes/
     ~/.config/fish/config.fish : config/fish/config.fish
-    ~/.bashrc:
-      path: bashrc
-      force: true
-      repalce: true
-    ~/.bash_profile :
-      path: bash_profile
-      force: true
-      replace: true
+    ~/.bashrc: bashrc
+    ~/.bash_profile: bash_profile
     ~/.gitconfig:
-      create:     true
       path:       gitfiles/gitconfig
       backup:     ./backup
-      replace:    true
-      force:      true
     ~/.gitignore_global:
-      create:     true
       path:       gitfiles/gitignore_global
       backup:     ./backup
-      replace:    true
-      force:      true
-    ~/.gitconfig.local:
-      create:     true
-      path:       gitfiles/gitconfig.local
-      replace:    true
-      force:      true
+    ~/.gitconfig.local: gitfiles/gitconfig.local
     ~/bin:
-      create:     true
       path:       bin/
       backup:     ./backup
-      replace:    true
       
 - clean: ['~', '~/.config/fish', '~/.zsh', '~/.oh-my-zsh/custom/themes']
 
