@@ -40,23 +40,17 @@ brew install caskroom/cask/brew-cask
 brew cask install google-chrome
 brew cask install firefox
 brew cask install skype
-brew cask install battle-net
-brew cask install steam
 brew cask install transmission
-brew cask install tunnelblick
 
 # Development
 brew cask install android-studio
 brew cask install intellij-idea-ce
-brew cask install sourcetree
 brew cask install gitbook
 brew cask install github-desktop
-brew cask install eclipse-java
 brew cask install atom
 brew cask install textmate
 brew cask install paw
 brew cask install virtualbox
-brew cask install genymotion
 
 # Media
 brew cask install vlc
@@ -65,9 +59,7 @@ brew cask install vox-preferences-pane
 
 # utilities
 brew cask install flux
-brew cask install ccleaner
 brew cask install the-unarchiver
-brew cask install dash
 brew cask install iterm2
 brew cask install android-file-transfer
 brew cask install teamviewer

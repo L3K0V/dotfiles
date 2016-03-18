@@ -9,6 +9,9 @@ alias tues='cd ~/Workspace/elsys'
 
 alias lifebelt='workon lifebelt && cd ~/Workspace/lifebelt'
 
+# Homebrew
+alias brews='brew list -1'
+
 # Python
 alias pyserver='python3 -m http.server'
 alias py='python'
@@ -48,12 +51,6 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; npm i -g npm; npm update -g; sudo gem update --system; sudo gem update; apm upgrade --confirm false'
-
-# OS X has no `md5sum`, so use `md5` as a fallback
-command -v md5sum > /dev/null || alias md5sum="md5"
-
-# OS X has no `sha1sum`, so use `shasum` as a fallback
-command -v sha1sum > /dev/null || alias sha1sum="shasum"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"

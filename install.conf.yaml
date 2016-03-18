@@ -12,6 +12,7 @@
     ~/.zshenv: config/zsh/zshenv
     ~/.zsh_aliases: config/zsh/zsh_aliases
     ~/.oh-my-zsh/custom/themes: oh-my-zsh/custom/themes/
+    ~/.oh-my-zsh/custom/plugins: oh-my-zsh/custom/plugins
     ~/.config/fish/config.fish : config/fish/config.fish
     ~/.bashrc: bashrc
     ~/.bash_profile: bash_profile
@@ -25,8 +26,8 @@
     ~/bin:
       path:       bin/
       backup:     ./backup
-      
-- clean: ['~', '~/.config/fish', '~/.zsh', '~/.oh-my-zsh/custom/themes']
+
+- clean: ['~', '~/.config/fish', '~/.zsh', '~/.oh-my-zsh/custom/themes','~/.oh-my-zsh/custom/plugins']
 
 - shell:
   - ["mkdir -p ~/.config/fish ~/.zsh ~/.oh-my-zsh/custom/themes", "Checking folder structure exists"]
