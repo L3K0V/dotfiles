@@ -7,7 +7,7 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-plugins=(git git-extras virtualenvwrapper virtualenv-prompt python pyenv bower)
+plugins=(git git-extras virtualenvwrapper virtualenv-prompt python pyenv bower zsh-autosuggestions)
 
 if [ -f ~/.bash_profile ]; then
     source ~/.bash_profile
