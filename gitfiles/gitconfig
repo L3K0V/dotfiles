@@ -42,6 +42,8 @@
 
   alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
 	ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
+
+  squash = "!squash() { git rebase --interactive --autosquash HEAD~$@ ;}; squash"
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = vim
