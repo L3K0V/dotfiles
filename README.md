@@ -29,6 +29,5 @@ Make sure you run this first, or before `atom.sh` because it atom is missing bre
 ## Thanks to...
 
 - [kunev](https://github.com/kunev) - for awesome aliases and separated zsh files structure
-- [anishathalye](https://github.com/anishathalye) - for Dotbot and cool post
-inspirational post about dot files
+- [anishathalye](https://github.com/anishathalye) - for Dotbot and cool inspirational post about dot files
 - [daviesjamie](https://github.com/daviesjamie) - without you I would't know about Fish shell.
