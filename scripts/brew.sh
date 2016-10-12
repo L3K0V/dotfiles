@@ -31,7 +31,6 @@ brew install wget
 brew install git
 brew install android-sdk
 brew install android-ndk
-brew install pidcat
 
 # Install essential casks
 brew install caskroom/cask/brew-cask
