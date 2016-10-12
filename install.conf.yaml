@@ -15,6 +15,7 @@
     ~/.oh-my-zsh/custom/plugins: oh-my-zsh/custom/plugins/
     ~/.config/fish/config.fish : config/fish/config.fish
     ~/.bashrc: bashrc
+    ~/.bash_aliases: bash_aliases
     ~/.bash_profile: bash_profile
     ~/.gitconfig:
       path:       gitfiles/gitconfig

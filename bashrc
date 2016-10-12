@@ -3,6 +3,10 @@ if [ -f /usr/local/etc/bash_completion ]; then
   . /usr/local/etc/bash_completion
 fi
 
+if [ -f ~/.bash_aliases ]; then
+  source ~/.bash_aliases
+fi
+
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export MANPATH="/usr/local/man:$MANPATH"
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
