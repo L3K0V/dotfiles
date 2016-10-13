@@ -32,6 +32,8 @@ brew install git
 brew install android-sdk
 brew install android-ndk
 
+brew tap beeftornado/rmtree && brew install brew-rmtree
+
 # Install essential casks
 brew install caskroom/cask/brew-cask
 
