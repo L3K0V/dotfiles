@@ -26,5 +26,4 @@ if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
   export PIP_VIRTUALENV_BASE=$WORKON_HOME
   export PIP_REQUIRE_VIRTUALENV=true
   export PIP_RESPECT_VIRTUALENV=true
-  export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 fi

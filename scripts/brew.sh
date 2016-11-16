@@ -22,6 +22,7 @@ brew install bash
 
 # Install essential homebrews
 brew install fish --HEAD # http://fishshell.com/
+brew install vim --override-system-vi
 brew install macvim --with-lua --custom-icons --override-system-vim --HEAD #
 brew install python
 brew install python3
