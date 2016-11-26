@@ -9,7 +9,7 @@ fi
 brew update
 
 # Upgrade old packages (if any)
-brew upgrade --all
+brew upgrade
 
 # Install GNU core utilities (those that come with OS X are outdated)
 brew install coreutils
@@ -21,38 +21,42 @@ brew install findutils
 brew install bash
 
 # Install essential homebrews
-brew install fish --HEAD # http://fishshell.com/
 brew install vim --override-system-vi
 brew install macvim --with-lua --custom-icons --override-system-vim --HEAD #
 brew install python
 brew install python3
 brew install ruby
+brew install redis
 brew install tree
 brew install wget
 brew install git
 brew install android-sdk
 brew install android-ndk
-
-brew tap beeftornado/rmtree && brew install brew-rmtree
+brew install zsh
+brew install zsh-completions
+brew install highlight
+brew install htop-osx
+brew install detox
 
 # Install essential casks
 brew install caskroom/cask/brew-cask
 
 # Internet
 brew cask install google-chrome
-brew cask install firefox
 brew cask install skype
 brew cask install transmission
 
 # Development
 brew cask install android-studio
-brew cask install intellij-idea-ce
-brew cask install gitbook
+brew cask install intellij-idea
+brew cask install gitbook-editor
 brew cask install github-desktop
 brew cask install atom
 brew cask install textmate
 brew cask install paw
 brew cask install virtualbox
+brew cask install sourcetree
+brew cask install sketch
 
 # Media
 brew cask install vlc
@@ -64,7 +68,7 @@ brew cask install flux
 brew cask install the-unarchiver
 brew cask install iterm2
 brew cask install android-file-transfer
-brew cask install teamviewer
+brew cask install reflector
 
 # Remove outdated versions from the Cellar
 brew cleanup
