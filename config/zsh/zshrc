@@ -7,17 +7,13 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-plugins=(git git-extras virtualenvwrapper virtualenv-prompt python pyenv bower zsh-autosuggestions)
+plugins=(virtualenvwrapper virtualenv-prompt python pyenv zsh-autosuggestions)
 
 if [ -f ~/.bash_profile ]; then
     source ~/.bash_profile
 fi
 
 source $ZSH/oh-my-zsh.sh
-
-# Config history
-setopt hist_ignore_all_dups
-setopt hist_ignore_space
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then

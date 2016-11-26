@@ -1,6 +1,6 @@
 # Turn on advanced bash completion if the file exists
 if [ -f /usr/local/etc/bash_completion ]; then
-  . /usr/local/etc/bash_completion
+  source /usr/local/etc/bash_completion
 fi
 
 if [ -f ~/.bash_aliases ]; then
