@@ -29,6 +29,8 @@ brew install ruby
 brew install redis
 brew install tree
 brew install wget
+brew install parallel
+brew install webp
 brew install git
 brew install android-sdk
 brew install android-ndk

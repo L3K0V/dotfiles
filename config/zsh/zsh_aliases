@@ -34,6 +34,8 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+alias png2webp="find . -name '*.png' | parallel -eta cwebp {} -o {.}.webp"
+alias deletepngs="find . -type f -iname \*.png -delete"
 
 # Empty the Trash on all mounted volumes and the main HDD
 # Also, clear Apple’s System Logs to improve shell startup speed
