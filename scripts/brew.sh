@@ -39,6 +39,8 @@ brew install zsh-completions
 brew install highlight
 brew install htop-osx
 brew install detox
+brew install rbenv
+brew install ruby-build
 
 # Install essential casks
 brew install caskroom/cask/brew-cask
@@ -59,6 +61,7 @@ brew cask install paw
 brew cask install virtualbox
 brew cask install sourcetree
 brew cask install sketch
+brew cask install fastlane
 
 # Media
 brew cask install vlc
@@ -69,7 +72,6 @@ brew cask install vox-preferences-pane
 brew cask install flux
 brew cask install the-unarchiver
 brew cask install iterm2
-brew cask install android-file-transfer
 brew cask install reflector
 
 # Remove outdated versions from the Cellar

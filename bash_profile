@@ -3,6 +3,10 @@ if [ -f ~/.bashrc ]; then
   source ~/.bashrc
 fi
 
+if [ -f ~/.profile ]; then
+  source ~/.profile
+fi
+
 # Add my bin to the path
 [ -d  "$HOME/bin" ] && PATH="$PATH:$HOME/bin"
 

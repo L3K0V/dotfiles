@@ -14,6 +14,7 @@ if [ -f ~/.bash_profile ]; then
 fi
 
 source $ZSH/oh-my-zsh.sh
+eval "$(rbenv init -)"
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
