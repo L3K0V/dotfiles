@@ -1,33 +1,43 @@
-# .files
+# Configuration and Setup Swissknife
 
-## Why?
-Before few days I have no idea about managing dot files. In most cases I search and used predefined vim, zsh and other configuration files and try to adjust to them, but one day after reading how these files can be managed with help of some version control system, I decide to try to create my own one, matching my style.
+## Getting started
+Clone this repository
 
-PS. Until yesterday I hated missing of all kinds of aliases and commands shortcuts. But from today new beginning is coming - to create my personal ultimate configuration!
-
-First, backup. And second - easy manage under version control of all .files with all custom configurations plus some scripts for easy setup new environment.
-
-## How to use it?
-Just clone and run ```install``` to link all configuration files.
-
-But before that, maybe would be best to run all shell scripts to install and setup all necessary and unnecessary utilities and programs:
-
-```shell
-$ ./brew.sh
-$ ./atom.sh
-$ ./osx.sh
+```bash
+$ git clone https://github.com/L3K0V/dotfiles.git
 ```
 
-### brew.sh
+### Initial setup
+Before setup the dotfiles maybe would be good to setup the environment.
 
-Make sure you run this first, or before `atom.sh` because it atom is missing brew will install it :)
+Go to `scripts` folder
 
-### atom.sh
+```bash
+$ cd scripts
+```
 
-### osx.sh
+First execute `brew.sh`. This will take a while...
 
-## Thanks to...
+```bash
+$ ./brew.sh
+```
 
-- [kunev](https://github.com/kunev) - for awesome aliases and separated zsh files structure
-- [anishathalye](https://github.com/anishathalye) - for Dotbot and cool inspirational post about dot files
-- [daviesjamie](https://github.com/daviesjamie) - without you I would't know about Fish shell.
+Then install global npm packages
+
+```bash
+$ ./npm.sh
+```
+
+and atom packages
+
+```bash
+$ ./atom.sh
+```
+
+### Install
+
+From the root of the cloned folder install and link all configurations
+
+```bash
+$ ./install
+```

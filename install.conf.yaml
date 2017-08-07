@@ -12,7 +12,6 @@
     ~/.zshenv: config/zsh/zshenv
     ~/.zsh_aliases: config/zsh/zsh_aliases
     ~/.oh-my-zsh/custom/themes: oh-my-zsh/custom/themes/
-    ~/.oh-my-zsh/custom/plugins: oh-my-zsh/custom/plugins/
     ~/.config/fish/config.fish : config/fish/config.fish
     ~/.bashrc: bashrc
     ~/.bash_aliases: bash_aliases

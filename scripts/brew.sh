@@ -17,65 +17,93 @@ brew install coreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
 
-# Install Bash 4
+# Install Bash 4 and zsh
 brew install bash
+brew install zsh
+brew install zsh-completions
+brew install antigen
+
+# Install environments
+brew install pyenv
+brew install pyenv-virtualenv
+brew install rbenv
+brew install ruby-build
 
 # Install essential homebrews
 brew install vim --override-system-vi
 brew install macvim --with-lua --custom-icons --override-system-vim --HEAD #
-brew install python
-brew install python3
-brew install ruby
 brew install redis
 brew install tree
 brew install wget
 brew install parallel
 brew install webp
 brew install git
-brew install android-sdk
-brew install android-ndk
-brew install zsh
-brew install zsh-completions
 brew install highlight
 brew install htop-osx
 brew install detox
-brew install rbenv
-brew install ruby-build
 
 # Install essential casks
-brew install caskroom/cask/brew-cask
+brew tap caskroom/cask
+
+brew cask install java
 
 # Internet
 brew cask install google-chrome
 brew cask install skype
+brew cask install slack
+brew cask install discord
+brew cask install telegram-desktop
 brew cask install transmission
 
-# Development
+# IDEs
 brew cask install android-studio
-brew cask install intellij-idea
-brew cask install gitbook-editor
-brew cask install github-desktop
+brew cask install intellij-idea-ce
 brew cask install atom
 brew cask install textmate
+
+# Development
+brew cask install android-sdk
+brew cask install android-ndk
+brew cask install gitbook-editor
+brew cask install github-desktop
 brew cask install paw
-brew cask install virtualbox
 brew cask install sourcetree
 brew cask install sketch
 brew cask install fastlane
 
+# Databases
+brew cask install postico
+brew cask install postgres
+
+# Virtualization
+brew cask install docker
+brew cask install kitematic
+brew cask install parallels-desktop
+
 # Media
+brew cask install spotify
 brew cask install vlc
 brew cask install vox
 brew cask install vox-preferences-pane
 
-# utilities
+# Utilities
 brew cask install flux
 brew cask install the-unarchiver
 brew cask install iterm2
 brew cask install reflector
+brew cask install macs-fan-control
+brew cask install cleanmymac
+brew cask install coconutbattery
+brew cask install spectacle
+brew cask install etcher
+brew cask install force-paste
+brew cask install skitch
+brew cask install sqlitebrowser
 
 # Remove outdated versions from the Cellar
 brew cleanup
 
 # Link .app files into /Applications
 brew linkapps
+
+echo "Go to https://www.bresink.com/osx/0TinkerTool/download.php to download TinkerTool"

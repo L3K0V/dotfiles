@@ -30,8 +30,6 @@
   s = status
 
   unstage = reset HEAD
-  uns = reset HEAD
-
   untrack = rm --cached
   unt = rm --cached
 
@@ -40,7 +38,7 @@
   gl = log -12 --color=always --all --graph --topo-order --pretty='format:%Cgreen%h%Creset %s %C(black bold)(by %an)%Creset%C(yellow bold)%d%Creset%n'
   gll = log --color=always --all --graph --topo-order --pretty='format:%Cgreen%h%Creset %s %C(black bold)(%cr by %an)%Creset%C(yellow bold)%d%Creset%n'
 
-  alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
+  alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\t=> \\2/' | sort
 	ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
 
   squash = "!squash() { git rebase --interactive --autosquash HEAD~$@ ;}; squash"
