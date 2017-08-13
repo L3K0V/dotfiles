@@ -1,19 +1,27 @@
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+if [ -f /usr/local/share/antigen/antigen.zsh ]; then
+  source /usr/local/share/antigen/antigen.zsh
+fi
 
-ZSH_THEME="vokela"
+antigen use oh-my-zsh
 
-fpath=(/usr/local/share/zsh-completions $fpath)
+antigen bundle git
+antigen bundle heroku
+antigen bundle pip
+antigen bundle lein
+antigen bundle command-not-found
 
-DISABLE_UNTRACKED_FILES_DIRTY="true"
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
 
-plugins=(virtualenvwrapper virtualenv-prompt python pyenv zsh-autosuggestions)
+antigen bundle L3K0V/zsh-files
+antigen theme L3K0V/zsh-files themes/vokela
+
+antigen apply
 
 if [ -f ~/.bash_profile ]; then
     source ~/.bash_profile
 fi
 
-source $ZSH/oh-my-zsh.sh
 eval "$(rbenv init -)"
 
 # Preferred editor for local and remote sessions

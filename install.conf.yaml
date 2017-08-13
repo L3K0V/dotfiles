@@ -7,22 +7,12 @@
 
 - link:
     ~/.dotfiles: ''
-    ~/.zsh: config/zsh/
-    ~/.zshrc: config/zsh/zshrc
-    ~/.zshenv: config/zsh/zshenv
-    ~/.zsh_aliases: config/zsh/zsh_aliases
-    ~/.oh-my-zsh/custom/themes: oh-my-zsh/custom/themes/
-    ~/.config/fish/config.fish : config/fish/config.fish
-    ~/.bashrc: bashrc
-    ~/.bash_aliases: bash_aliases
-    ~/.bash_profile: bash_profile
-    ~/.gitconfig:
-      path:       gitfiles/gitconfig
-      backup:     ./backup
-    ~/.gitignore_global:
-      path:       gitfiles/gitignore_global
-      backup:     ./backup
-    ~/.gitconfig.local: gitfiles/gitconfig.local
+    ~/.zshrc:             .zshrc
+    ~/.bashrc:            .bashrc
+    ~/.bash_aliases:      .bash_aliases
+    ~/.bash_profile:      .bash_profile
+    ~/.gitconfig:         .gitconfig
+    ~/.gitignore_global:  .gitignore_global
     ~/bin:
       path:       bin/
       backup:     ./backup
@@ -30,6 +20,6 @@
 - clean: ['~']
 
 - shell:
-  - ["mkdir -p ~/.config/fish ~/.zsh ~/.oh-my-zsh/custom/themes", "Checking folder structure exists"]
+  - ["mkdir -p  ~/.zsh", "Checking folder structure exists"]
   - [git submodule update --init --recursive, Installing submodules]
   - [git submodule foreach git pull origin master, Updating submodules]
