@@ -4,14 +4,12 @@ fi
 
 antigen use oh-my-zsh
 
-antigen bundle git
 antigen bundle heroku
-antigen bundle pip
-antigen bundle lein
 antigen bundle command-not-found
 
-antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle tarruda/zsh-autosuggestions
 
 antigen bundle L3K0V/zsh-files
 antigen theme L3K0V/zsh-files themes/vokela
@@ -22,7 +20,10 @@ if [ -f ~/.bash_profile ]; then
     source ~/.bash_profile
 fi
 
-eval "$(rbenv init -)"
+rbenv() {
+    eval "$( command rbenv init - )"
+    rbenv "$@"
+}
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -43,14 +44,11 @@ if [ -f "$HOME/.zsh/functions.zsh" ]; then
     source "$HOME/.zsh/functions.zsh"
 fi
 
-alias zshreload=". ~/.zshrc"
+alias zshreload="antigen reset && exec /usr/local/bin/zsh -i"
 
 ##
 # Completion
 ##
-autoload -U compinit
-compinit
-zmodload -i zsh/complist
 setopt hash_list_all            # hash everything before completion
 setopt completealiases          # complete alisases
 setopt always_to_end            # when completing from the middle of a word, move the cursor to the end of the word

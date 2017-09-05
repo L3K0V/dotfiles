@@ -20,7 +20,6 @@ brew install findutils
 # Install Bash 4 and zsh
 brew install bash
 brew install zsh
-brew install zsh-completions
 brew install antigen
 
 # Install environments
