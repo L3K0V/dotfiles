@@ -20,10 +20,7 @@ if [ -f ~/.bash_profile ]; then
     source ~/.bash_profile
 fi
 
-rbenv() {
-    eval "$( command rbenv init - )"
-    rbenv "$@"
-}
+eval "$(rbenv init -)"
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
