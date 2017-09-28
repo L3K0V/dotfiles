@@ -17,6 +17,8 @@ brew install coreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
 
+brew install gpg
+
 # Install Bash 4 and zsh
 brew install bash
 brew install zsh
@@ -98,6 +100,7 @@ brew cask install etcher
 brew cask install force-paste
 brew cask install skitch
 brew cask install sqlitebrowser
+brew cask install keybase
 
 # Remove outdated versions from the Cellar
 brew cleanup
