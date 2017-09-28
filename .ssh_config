@@ -1,0 +1,12 @@
+Host *
+ IdentityFile ~/.ssh/lekov_rsa
+ AddKeysToAgent yes
+ UseKeychain yes
+
+Host L3K0V-Bitbucket
+	HostName bitbucket.org
+	User L3K0V
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/L3K0V-Bitbucket
+	UseKeychain yes
+	AddKeysToAgent yes
