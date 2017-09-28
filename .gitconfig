@@ -1,6 +1,6 @@
 [user]
-  name = Asen Lekov
-  email = asenlekoff@gmail.com
+	name = Asen Lekov
+	email = asenlekoff@gmail.com
 
 [alias]
   tags = tag -l

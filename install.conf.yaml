@@ -13,6 +13,7 @@
     ~/.bash_profile:      .bash_profile
     ~/.gitconfig:         .gitconfig
     ~/.gitignore_global:  .gitignore_global
+    ~/.vimrc:             .vimrc
     ~/bin:
       path:       bin/
       backup:     ./backup
