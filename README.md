@@ -34,6 +34,11 @@ and atom packages
 $ ./atom.sh
 ```
 
+#### Setup GPG using keybase
+
+https://github.com/pstadler/keybase-gpg-github
+
+
 ### Install
 
 From the root of the cloned folder install and link all configurations
