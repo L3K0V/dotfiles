@@ -2,6 +2,10 @@ if [ -f /usr/local/share/antigen/antigen.zsh ]; then
   source /usr/local/share/antigen/antigen.zsh
 fi
 
+if [ -f ~/.bash_profile ]; then
+    source ~/.bash_profile
+fi
+
 antigen use oh-my-zsh
 
 antigen bundle heroku
@@ -16,33 +20,6 @@ antigen theme L3K0V/zsh-files themes/vokela
 
 antigen apply
 
-if [ -f ~/.bash_profile ]; then
-    source ~/.bash_profile
-fi
-
-eval "$(rbenv init -)"
-
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='mvim'
-fi
-
-if [ -f "$HOME/.zsh_aliases" ]; then
-    source "$HOME/.zsh_aliases"
-fi
-
-if [ -f "$HOME/.zsh/bindkeys.zsh" ]; then
-    source "$HOME/.zsh/bindkeys.zsh"
-fi
-
-if [ -f "$HOME/.zsh/functions.zsh" ]; then
-    source "$HOME/.zsh/functions.zsh"
-fi
-
-alias zshreload="antigen reset && exec /usr/local/bin/zsh -i"
-
 ##
 # Completion
 ##
@@ -56,14 +33,19 @@ setopt list_ambiguous           # complete as much of a completion until it gets
 ##
 # History
 ##
-HISTFILE=~/.zsh_history         # where to store zsh config
-HISTSIZE=1024                   # big history
-SAVEHIST=1024                   # big history
-setopt append_history           # append
-setopt hist_ignore_all_dups     # no duplicate
-unsetopt hist_ignore_space      # ignore space prefixed commands
-setopt hist_reduce_blanks       # trim blanks
-setopt hist_verify              # show before executing history commands
-setopt inc_append_history       # add commands as they are typed, don't wait until shell exit
-setopt share_history            # share hist between sessions
-setopt bang_hist                # !keyword
+HISTFILE=~/.zsh_history          # where to store zsh config
+HISTSIZE=1024                    # big history
+SAVEHIST=1024                    # big history
+setopt BANG_HIST                 # Treat the '!' character specially during expansion.
+setopt EXTENDED_HISTORY          # Write the history file in the ":start:elapsed;command" format.
+setopt INC_APPEND_HISTORY        # Write to the history file immediately, not when the shell exits.
+setopt SHARE_HISTORY             # Share history between all sessions.
+setopt HIST_EXPIRE_DUPS_FIRST    # Expire duplicate entries first when trimming history.
+setopt HIST_IGNORE_DUPS          # Don't record an entry that was just recorded again.
+setopt HIST_IGNORE_ALL_DUPS      # Delete old recorded entry if new entry is a duplicate.
+setopt HIST_FIND_NO_DUPS         # Do not display a line previously found.
+setopt HIST_IGNORE_SPACE         # Don't record an entry starting with a space.
+setopt HIST_SAVE_NO_DUPS         # Don't write duplicate entries in the history file.
+setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording entry.
+setopt HIST_VERIFY               # Don't execute immediately upon history expansion.
+setopt HIST_BEEP                 # Beep when accessing nonexistent history.

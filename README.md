@@ -19,7 +19,7 @@ $ cd scripts
 First execute `brew.sh`. This will take a while...
 
 ```bash
-$ ./brew.sh
+$ ./brews.sh
 ```
 
 Then install global npm packages

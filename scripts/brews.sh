@@ -18,6 +18,8 @@ brew install coreutils
 brew install findutils
 
 brew install gpg
+brew install gpg-agent
+brew pinentry-mac
 
 # Install Bash 4 and zsh
 brew install bash

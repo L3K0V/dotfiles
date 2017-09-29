@@ -7,14 +7,16 @@
 
 - link:
     ~/.dotfiles: ''
-    ~/.zshrc:             .zshrc
-    ~/.bashrc:            .bashrc
-    ~/.bash_aliases:      .bash_aliases
-    ~/.bash_profile:      .bash_profile
-    ~/.gitconfig:         .gitconfig
-    ~/.gitignore_global:  .gitignore_global
-    ~/.vimrc:             .vimrc
-    ~/.ssh/config:        .ssh_config
+    ~/.zshrc:                 .zshrc
+    ~/.bashrc:                .bashrc
+    ~/.bash_aliases:          .bash_aliases
+    ~/.bash_profile:          .bash_profile
+    ~/.gitconfig:             .gitconfig
+    ~/.gitignore_global:      .gitignore_global
+    ~/.vimrc:                 .vimrc
+    ~/.ssh/config:            .ssh_config
+    ~/.gnupg/gpg.conf:        .gpg.conf
+    ~/.gnupg/gpg-agent.conf:  .gpg-agent.conf
     ~/bin:
       path:       bin/
       backup:     ./backup

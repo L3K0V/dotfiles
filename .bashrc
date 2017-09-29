@@ -7,7 +7,6 @@ if [ -f ~/.bash_aliases ]; then
   source ~/.bash_aliases
 fi
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.fastlane/bin:$HOME/opt/local/bin"
 export MANPATH="/usr/local/man:$MANPATH"
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 export ANDROID_HOME=/usr/local/opt/android-sdk
