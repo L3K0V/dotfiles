@@ -103,6 +103,7 @@ brew cask install force-paste
 brew cask install skitch
 brew cask install sqlitebrowser
 brew cask install keybase
+brew cask install cheatsheet
 
 # Remove outdated versions from the Cellar
 brew cleanup

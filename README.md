@@ -46,3 +46,33 @@ From the root of the cloned folder install and link all configurations
 ```bash
 $ ./install
 ```
+
+## Post-setup
+
+### Setup Machine learning environment
+
+Following http://fmi.machine-learning.bg/lectures/01-intro
+
+```bash
+$ mkvirvtualenv ml
+$ workon ml
+$ pip install numpy scipy matplotlib ipython scikit-learn pandas pillow mglearn jupyter
+```
+
+After that start the environment:
+
+```bash
+$ jupyter notebook
+```
+
+And remember these important megical initialization lines:
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+import mglearn
+from IPython.display import display
+
+%matplotlib notebook
+```
