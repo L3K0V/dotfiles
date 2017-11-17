@@ -38,6 +38,9 @@ $ ./atom.sh
 
 https://github.com/pstadler/keybase-gpg-github
 
+```bash
+$ killall gpg-agent && gpg-agent --daemon --use-standard-socket --pinentry-program /usr/local/bin/pinentry
+```
 
 ### Install
 
