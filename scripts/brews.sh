@@ -31,6 +31,7 @@ brew install pyenv
 brew install pyenv-virtualenv
 brew install rbenv
 brew install ruby-build
+brew install postgresql
 
 # Install essential homebrews
 brew install vim --override-system-vi
@@ -52,10 +53,9 @@ brew cask install java
 
 # Internet
 brew cask install google-chrome
+brew cask install firefox
 brew cask install skype
 brew cask install slack
-brew cask install discord
-brew cask install telegram-desktop
 brew cask install transmission
 
 # IDEs
@@ -73,6 +73,7 @@ brew cask install paw
 brew cask install sourcetree
 brew cask install sketch
 brew cask install fastlane
+brew cask install zeplin
 
 # Databases
 brew cask install postico
@@ -90,6 +91,7 @@ brew cask install vox
 brew cask install vox-preferences-pane
 
 # Utilities
+brew cask install appcleaner
 brew cask install flux
 brew cask install the-unarchiver
 brew cask install iterm2
@@ -103,7 +105,7 @@ brew cask install force-paste
 brew cask install skitch
 brew cask install sqlitebrowser
 brew cask install keybase
-brew cask install cheatsheet
+brew cask install sip
 
 # Remove outdated versions from the Cellar
 brew cleanup
