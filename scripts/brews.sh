@@ -17,6 +17,7 @@ brew install coreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
 
+# GPG Signing
 brew install gpg
 brew install gpg-agent
 brew pinentry-mac
@@ -35,7 +36,6 @@ brew install postgresql
 
 # Install essential homebrews
 brew install vim --override-system-vi
-brew install macvim --with-lua --custom-icons --override-system-vim --HEAD #
 brew install redis
 brew install tree
 brew install wget
@@ -43,7 +43,6 @@ brew install parallel
 brew install webp
 brew install git
 brew install highlight
-brew install htop-osx
 brew install detox
 
 # Install essential casks
@@ -67,7 +66,6 @@ brew cask install textmate
 # Development
 brew cask install android-sdk
 brew cask install android-ndk
-brew cask install gitbook-editor
 brew cask install github-desktop
 brew cask install paw
 brew cask install sourcetree
@@ -97,15 +95,16 @@ brew cask install the-unarchiver
 brew cask install iterm2
 brew cask install reflector
 brew cask install macs-fan-control
-brew cask install cleanmymac
 brew cask install coconutbattery
 brew cask install spectacle
-brew cask install etcher
-brew cask install force-paste
 brew cask install skitch
 brew cask install sqlitebrowser
 brew cask install keybase
 brew cask install sip
+
+# brew cask install cleanmymac
+# brew cask install etcher # ISO Burner
+# brew cask install force-paste # For pasting password on remote desktop machines
 
 # Remove outdated versions from the Cellar
 brew cleanup
