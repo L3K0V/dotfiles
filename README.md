@@ -79,3 +79,5 @@ from IPython.display import display
 
 %matplotlib notebook
 ```
+
+https://github.com/jf/rbenv-gemset#usage

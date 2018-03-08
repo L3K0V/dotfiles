@@ -31,6 +31,7 @@ brew install antigen
 brew install pyenv
 brew install pyenv-virtualenv
 brew install rbenv
+brew install rbenv-gemset
 brew install ruby-build
 brew install postgresql
 
