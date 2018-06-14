@@ -102,9 +102,9 @@ brew cask install skitch
 brew cask install sqlitebrowser
 brew cask install keybase
 brew cask install sip
+brew cask install etcher # ISO Burner
 
 # brew cask install cleanmymac
-# brew cask install etcher # ISO Burner
 # brew cask install force-paste # For pasting password on remote desktop machines
 
 # Remove outdated versions from the Cellar
