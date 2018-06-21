@@ -21,6 +21,7 @@ brew install findutils
 brew install gpg
 brew install gpg-agent
 brew pinentry-mac
+brew install certbot
 
 # Install Bash 4 and zsh
 brew install bash
