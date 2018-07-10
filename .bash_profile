@@ -4,12 +4,14 @@ if [ -x /usr/libexec/path_helper ]; then
     eval `/usr/libexec/path_helper -s`
 fi
 
-export PATH="/usr/sbin:/sbin:$PATH"              # 6
-export PATH="/usr/bin:/bin:$PATH"                # 5
-export PATH="$HOME/.fastlane/bin:$PATH"          # 4
-export PATH="$HOME/opt/local/bin:$PATH"          # 3
-export PATH="/usr/local/bin:$PATH"               # 2
-export PATH="/usr/local/opt/gpg-agent/bin:$PATH" # 1
+export PATH="/usr/sbin:/sbin:$PATH"              # 8
+export PATH="/usr/bin:/bin:$PATH"                # 7
+export PATH="$HOME/.fastlane/bin:$PATH"          # 6
+export PATH="$HOME/opt/local/bin:$PATH"          # 5
+export PATH="/usr/local/bin:$PATH"               # 4
+export PATH="/usr/local/opt/gpg-agent/bin:$PATH" # 3
+export PYENV_ROOT="$HOME/.pyenv"                 # 2
+export PATH="$PYENV_ROOT/bin:$PATH"              # 1
 
 # Prefer GNU coreutils commands with their real names
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
@@ -24,6 +26,14 @@ if which rbenv &> /dev/null; then
 
     # enable shims and auto-completion
     eval "$(rbenv init -)"
+fi
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+if which pyenv-virtualenv-init > /dev/null; then
+  eval "$(pyenv virtualenv-init -)"
 fi
 
 # Preferred editor for local and remote sessions

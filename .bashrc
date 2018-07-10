@@ -8,7 +8,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 export MANPATH="/usr/local/man:$MANPATH"
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export VIRTUALENVWRAPPER_PYTHON=$(which python3)
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export ANDROID_NDK_HOME=/usr/local/opt/android-ndk
 

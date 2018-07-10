@@ -35,6 +35,7 @@ brew install rbenv
 brew install rbenv-gemset
 brew install ruby-build
 brew install postgresql
+brew install opencv3 --with-python3
 
 # Install essential homebrews
 brew install vim --override-system-vi
