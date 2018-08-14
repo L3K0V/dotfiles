@@ -9,8 +9,8 @@ fi
 
 export MANPATH="/usr/local/man:$MANPATH"
 export VIRTUALENVWRAPPER_PYTHON=$(which python3)
-export ANDROID_HOME=/usr/local/opt/android-sdk
-export ANDROID_NDK_HOME=/usr/local/opt/android-ndk
+export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
+export ANDROID_NDK_HOME="/usr/local/share/android-ndk"
 
 # Load in .bashrc -------------------------------------------------
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then

@@ -9,12 +9,15 @@ export PATH="/usr/bin:/bin:$PATH"                # 7
 export PATH="$HOME/.fastlane/bin:$PATH"          # 6
 export PATH="$HOME/opt/local/bin:$PATH"          # 5
 export PATH="/usr/local/bin:$PATH"               # 4
-export PATH="/usr/local/opt/gpg-agent/bin:$PATH" # 3
 export PYENV_ROOT="$HOME/.pyenv"                 # 2
 export PATH="$PYENV_ROOT/bin:$PATH"              # 1
 
-# Prefer GNU coreutils commands with their real names
+# Prefer GNU coreutils and findutils commands with their real names
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
+
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+export MANPATH="/usr/local/opt/findutils/libexec/gnuman:$MANPATH"
 
 # Add my bin to the path
 [ -d  "$HOME/bin" ] && PATH="$PATH:$HOME/bin"

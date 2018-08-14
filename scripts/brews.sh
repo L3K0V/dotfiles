@@ -20,7 +20,7 @@ brew install findutils
 # GPG Signing
 brew install gpg
 brew install gpg-agent
-brew pinentry-mac
+brew install pinentry-mac
 brew install certbot
 
 # Install Bash 4 and zsh
@@ -32,13 +32,11 @@ brew install antigen
 brew install pyenv
 brew install pyenv-virtualenv
 brew install rbenv
-brew install rbenv-gemset
-brew install ruby-build
 brew install postgresql
 brew install opencv3 --with-python3
 
 # Install essential homebrews
-brew install vim --override-system-vi
+brew install vim --with-override-system-vi
 brew install redis
 brew install tree
 brew install wget
@@ -49,32 +47,29 @@ brew install highlight
 brew install detox
 
 # Install essential casks
-brew tap caskroom/cask
-
 brew cask install java
+brew cask install homebrew/cask-versions/java8 # Needed for Android SDK
 
 # Internet
 brew cask install google-chrome
-brew cask install firefox
 brew cask install skype
 brew cask install slack
 brew cask install transmission
 
 # IDEs
 brew cask install android-studio
-brew cask install intellij-idea-ce
 brew cask install atom
-brew cask install textmate
+# brew cask install textmate
 
 # Development
 brew cask install android-sdk
 brew cask install android-ndk
-brew cask install github-desktop
+brew cask install github
 brew cask install paw
 brew cask install sourcetree
 brew cask install sketch
-brew cask install fastlane
 brew cask install zeplin
+brew cask install fastlane
 
 # Databases
 brew cask install postico
@@ -88,8 +83,6 @@ brew cask install parallels-desktop
 # Media
 brew cask install spotify
 brew cask install vlc
-brew cask install vox
-brew cask install vox-preferences-pane
 
 # Utilities
 brew cask install appcleaner
@@ -97,23 +90,13 @@ brew cask install flux
 brew cask install the-unarchiver
 brew cask install iterm2
 brew cask install reflector
-brew cask install macs-fan-control
-brew cask install coconutbattery
-brew cask install spectacle
-brew cask install skitch
-brew cask install sqlitebrowser
 brew cask install keybase
 brew cask install sip
 brew cask install etcher # ISO Burner
-
-# brew cask install cleanmymac
-# brew cask install force-paste # For pasting password on remote desktop machines
+brew cask install alfred
 
 # Remove outdated versions from the Cellar
 brew cleanup
-
-# Link .app files into /Applications
-brew linkapps
 
 echo "Go to https://www.bresink.com/osx/0TinkerTool/download.php to download TinkerTool"
 echo "Setup GPG siging using keybase. Folow https://github.com/pstadler/keybase-gpg-github"

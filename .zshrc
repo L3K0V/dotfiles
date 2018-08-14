@@ -6,15 +6,13 @@ if [ -f ~/.bash_profile ]; then
     source ~/.bash_profile
 fi
 
-if [ -f ~/.gnupg/.gpg-agent-info ] && [ -n "$(pgrep gpg-agent)" ]; then
-    source ~/.gnupg/.gpg-agent-info
-    export GPG_AGENT_INFO
-else
-    eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
+AGENT_SOCK=$(gpgconf --list-dirs | grep agent-socket | cut -d : -f 2)
+
+if [[ ! -S $AGENT_SOCK ]]; then
+  gpg-agent --daemon --use-standard-socket &>/dev/null
 fi
 
-GPG_TTY=$(tty)
-export GPG_TTY
+export GPG_TTY=$TTY
 
 antigen use oh-my-zsh
 
