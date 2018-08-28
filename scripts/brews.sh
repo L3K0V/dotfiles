@@ -94,6 +94,8 @@ brew cask install keybase
 brew cask install sip
 brew cask install etcher # ISO Burner
 brew cask install alfred
+brew cask install numi
+brew cask install agenda
 
 # Remove outdated versions from the Cellar
 brew cleanup

@@ -4,6 +4,9 @@ if [ -x /usr/libexec/path_helper ]; then
     eval `/usr/libexec/path_helper -s`
 fi
 
+export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
+export ANDROID_NDK_HOME="/usr/local/share/android-ndk"
+
 export PATH="/usr/sbin:/sbin:$PATH"              # 8
 export PATH="/usr/bin:/bin:$PATH"                # 7
 export PATH="$HOME/.fastlane/bin:$PATH"          # 6
@@ -11,6 +14,7 @@ export PATH="$HOME/opt/local/bin:$PATH"          # 5
 export PATH="/usr/local/bin:$PATH"               # 4
 export PYENV_ROOT="$HOME/.pyenv"                 # 2
 export PATH="$PYENV_ROOT/bin:$PATH"              # 1
+export PATH="$ANDROID_SDK_ROOT/platform-tools:$PATH"
 
 # Prefer GNU coreutils and findutils commands with their real names
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
