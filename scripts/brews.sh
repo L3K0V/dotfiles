@@ -70,6 +70,7 @@ brew cask install sourcetree
 brew cask install sketch
 brew cask install zeplin
 brew cask install fastlane
+brew install heroku/brew/heroku
 
 # Databases
 brew cask install postico
@@ -96,6 +97,7 @@ brew cask install etcher # ISO Burner
 brew cask install alfred
 brew cask install numi
 brew cask install agenda
+brew cask install coconutbattery
 
 # Remove outdated versions from the Cellar
 brew cleanup

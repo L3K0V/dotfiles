@@ -14,6 +14,10 @@ fi
 
 export GPG_TTY=$TTY
 
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+fi
+
 antigen use oh-my-zsh
 
 antigen bundle heroku
