@@ -17,6 +17,7 @@
     ~/.ssh/config:            .ssh_config
     ~/.gnupg/gpg.conf:        .gpg.conf
     ~/.gnupg/gpg-agent.conf:  .gpg-agent.conf
+    ~/com.googlecode.iterm2.plist: com.googlecode.iterm2.plist
     ~/bin:
       path:       bin/
       backup:     ./backup
@@ -25,5 +26,6 @@
 
 - shell:
   - ["mkdir -p  ~/.zsh", "Checking folder structure exists"]
-  - [git submodule update --init --recursive, Installing submodules]
-  - [git submodule foreach git pull origin master, Updating submodules]
+  - [git submodule update --init --recursive, Installing submodules...]
+  - [git submodule foreach git pull origin master, Updating submodules...]
+  - ["cp -irf assets/fonts/*.ttf ~/Library/Fonts", "Copy fonts..."]
