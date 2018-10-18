@@ -98,10 +98,7 @@ brew cask install alfred
 brew cask install numi
 brew cask install agenda
 brew cask install coconutbattery
+brew cask install dash
 
 # Remove outdated versions from the Cellar
 brew cleanup
-brew cask cleanup
-
-echo "Go to https://www.bresink.com/osx/0TinkerTool/download.php to download TinkerTool"
-echo "Setup GPG siging using keybase. Folow https://github.com/pstadler/keybase-gpg-github"
