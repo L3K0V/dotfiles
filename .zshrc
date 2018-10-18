@@ -28,7 +28,8 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle tarruda/zsh-autosuggestions
 
 antigen bundle L3K0V/zsh-files
-antigen theme L3K0V/zsh-files themes/vokela
+# antigen theme L3K0V/zsh-files themes/vokela
+antigen theme ~/Workspace/zsh-files --no-local-clone themes/vokela
 
 antigen apply
 
