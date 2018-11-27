@@ -40,6 +40,7 @@ https://github.com/pstadler/keybase-gpg-github
 
 ```bash
 $ killall gpg-agent && gpg-agent --daemon --pinentry-program /usr/local/bin/pinentry
+$ echo "test" | gpg --clearsign
 ```
 
 ### Install
