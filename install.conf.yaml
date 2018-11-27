@@ -29,5 +29,5 @@
   - ["mkdir -p  ~/.zsh", "Checking folder structure exists"]
   - [git submodule update --init --recursive, Installing submodules...]
   - [git submodule foreach git pull origin master, Updating submodules...]
-  - ["cp -irf assets/fonts/*.ttf ~/Library/Fonts", "Copy fonts..."]
+  - ["y | cp -irf assets/fonts/*.ttf ~/Library/Fonts", "Copy fonts..."]
   - [antigen reset && antigen update, Configure and update antigen]
