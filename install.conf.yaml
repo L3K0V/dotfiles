@@ -13,6 +13,7 @@
     ~/.bash_profile:          .bash_profile
     ~/.gitconfig:             .gitconfig
     ~/.gitignore_global:      .gitignore_global
+    ~/.gemrc:                 .gemrc
     ~/.vimrc:                 .vimrc
     ~/.ssh/config:            .ssh_config
     ~/.gnupg/gpg.conf:        .gpg.conf

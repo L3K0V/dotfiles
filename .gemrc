@@ -1,0 +1,13 @@
+# Self explanatory :-)
+benchmark: false
+
+# Verbosity of the gem command. false, true, and :really are the levels
+verbose: false
+
+# Enable/disable automatic updating of repository metadata
+update_sources: true
+
+# Print backtrace when RubyGems encounters an error
+backtrace: true
+
+gem: --no-document --suggestions
