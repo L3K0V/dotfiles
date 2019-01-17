@@ -32,6 +32,7 @@ brew install antigen
 brew install pyenv
 brew install pyenv-virtualenv
 brew install rbenv
+brew install node
 brew install postgresql
 brew install opencv3 --with-python3
 
@@ -55,7 +56,6 @@ brew cask install google-chrome
 brew cask install skype
 brew cask install slack
 brew cask install transmission
-brew cask install webtorrent
 
 # IDEs
 brew cask install android-studio
@@ -79,12 +79,12 @@ brew cask install postgres
 
 # Virtualization
 brew cask install docker
-brew cask install kitematic
 brew cask install parallels-desktop
 
 # Media
 brew cask install spotify
 brew cask install vlc
+brew cask install iina
 
 # Utilities
 brew cask install appcleaner
@@ -96,7 +96,6 @@ brew cask install keybase
 brew cask install sip
 brew cask install etcher # ISO Burner
 brew cask install alfred
-brew cask install numi
 brew cask install agenda
 brew cask install coconutbattery
 brew cask install dash
