@@ -37,7 +37,7 @@ brew install postgresql
 brew install opencv3 --with-python3
 
 # Install essential homebrews
-brew install vim --with-override-system-vi
+brew install vim
 brew install redis
 brew install tree
 brew install wget
@@ -60,7 +60,7 @@ brew cask install transmission
 # IDEs
 brew cask install android-studio
 brew cask install atom
-# brew cask install textmate
+brew cask install visual-studio-code
 
 # Development
 brew cask install android-sdk
