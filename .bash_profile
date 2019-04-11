@@ -5,7 +5,7 @@ if [ -x /usr/libexec/path_helper ]; then
 fi
 
 export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
-export ANDROID_NDK_HOME="/usr/local/share/android-ndk"
+# export ANDROID_NDK_HOME="/usr/local/share/android-ndk"
 
 export PATH="/usr/sbin:/sbin:$PATH"              # 8
 export PATH="/usr/bin:/bin:$PATH"                # 7
