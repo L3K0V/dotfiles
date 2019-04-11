@@ -35,6 +35,7 @@ brew install rbenv
 brew install node
 brew install postgresql
 brew install opencv3 --with-python3
+brew install heroku/brew/heroku
 
 # Install essential homebrews
 brew install vim
@@ -66,15 +67,12 @@ brew cask install visual-studio-code
 brew cask install android-sdk
 brew cask install android-ndk
 brew cask install github
-brew cask install paw
 brew cask install sourcetree
 brew cask install sketch
 brew cask install zeplin
 brew cask install fastlane
-brew install heroku/brew/heroku
 
 # Databases
-brew cask install postico
 brew cask install postgres
 
 # Virtualization
@@ -87,13 +85,12 @@ brew cask install vlc
 brew cask install iina
 
 # Utilities
-brew cask install appcleaner
+brew cask install setapp
 brew cask install flux
 brew cask install the-unarchiver
 brew cask install iterm2
 brew cask install reflector
 brew cask install keybase
-brew cask install sip
 brew cask install etcher # ISO Burner
 brew cask install alfred
 brew cask install agenda
