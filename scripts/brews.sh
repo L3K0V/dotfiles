@@ -32,9 +32,11 @@ brew install antigen
 brew install pyenv
 brew install pyenv-virtualenv
 brew install rbenv
-brew install node
+
+brew install nvm
+mkdir ~/.nvm
+
 brew install postgresql
-brew install opencv3 --with-python3
 brew install heroku/brew/heroku
 
 # Install essential homebrews
@@ -60,7 +62,6 @@ brew cask install transmission
 
 # IDEs
 brew cask install android-studio
-brew cask install atom
 brew cask install visual-studio-code
 
 # Development
@@ -81,7 +82,6 @@ brew cask install parallels-desktop
 
 # Media
 brew cask install spotify
-brew cask install vlc
 brew cask install iina
 
 # Utilities
@@ -95,7 +95,6 @@ brew cask install etcher # ISO Burner
 brew cask install alfred
 brew cask install agenda
 brew cask install coconutbattery
-brew cask install dash
 
 # Remove outdated versions from the Cellar
 brew cleanup
