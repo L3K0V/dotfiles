@@ -19,7 +19,6 @@
     ~/.gnupg/gpg.conf:        .gpg.conf
     ~/.gnupg/gpg-agent.conf:  .gpg-agent.conf
     ~/com.googlecode.iterm2.plist: com.googlecode.iterm2.plist
-    ~/Snippets.dash: dash-snippets.dash
     ~/bin:
       path:       bin/
       backup:     ./backup
