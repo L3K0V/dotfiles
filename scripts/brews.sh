@@ -49,6 +49,7 @@ brew install webp
 brew install git
 brew install highlight
 brew install detox
+brew install swiftlint
 
 # Install essential casks
 brew cask install java
