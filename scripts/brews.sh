@@ -32,11 +32,10 @@ brew install antigen
 brew install pyenv
 brew install pyenv-virtualenv
 brew install rbenv
-
 brew install nvm
+
 mkdir ~/.nvm
 
-brew install postgresql
 brew install heroku/brew/heroku
 
 # Install essential homebrews
@@ -50,6 +49,7 @@ brew install git
 brew install highlight
 brew install detox
 brew install swiftlint
+brew install diff-so-fancy
 
 # Install essential casks
 brew cask install java
@@ -57,6 +57,7 @@ brew cask install homebrew/cask-versions/java8 # Needed for Android SDK
 
 # Internet
 brew cask install google-chrome
+brew cask install brave-browser
 brew cask install skype
 brew cask install slack
 brew cask install transmission
@@ -64,6 +65,7 @@ brew cask install transmission
 # IDEs
 brew cask install android-studio
 brew cask install visual-studio-code
+brew cask install clion # For Embedded development
 
 # Development
 brew cask install android-sdk
@@ -74,8 +76,13 @@ brew cask install sketch
 brew cask install zeplin
 brew cask install fastlane
 
-# Databases
-brew cask install postgres
+# Nordic
+brew cask install homebrew/cask-drivers/nordic-nrf-command-line-tools
+brew cask install homebrew/cask-drivers/nordic-nrf-connect
+brew cask install segger-embedded-studio-for-arm
+brew cask install segger-jlink
+brew tap ArmMbed/homebrew-formulae
+brew install arm-none-eabi-gcc
 
 # Virtualization
 brew cask install docker
@@ -92,7 +99,6 @@ brew cask install the-unarchiver
 brew cask install iterm2
 brew cask install reflector
 brew cask install keybase
-brew cask install etcher # ISO Burner
 brew cask install alfred
 brew cask install agenda
 brew cask install coconutbattery

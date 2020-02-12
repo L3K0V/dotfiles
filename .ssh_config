@@ -10,3 +10,11 @@ Host L3K0V-Bitbucket
 	IdentityFile ~/.ssh/L3K0V-Bitbucket
 	UseKeychain yes
 	AddKeysToAgent yes
+
+Host DigitalLights
+	HostName gitlab.com
+	User asen.lekov@lights.digital
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/asen.lekov@lights.digital-GitLab
+	UseKeychain yes
+	AddKeysToAgent yes
