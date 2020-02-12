@@ -8,6 +8,7 @@
 - link:
     ~/.dotfiles: ''
     ~/.zshrc:                 .zshrc
+    ~/.zsh_plugins.txt:       .zsh_plugins
     ~/.bashrc:                .bashrc
     ~/.bash_aliases:          .bash_aliases
     ~/.bash_profile:          .bash_profile

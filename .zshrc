@@ -1,7 +1,3 @@
-if [ -f /usr/local/share/antigen/antigen.zsh ]; then
-  source /usr/local/share/antigen/antigen.zsh
-fi
-
 if [ -f ~/.bash_profile ]; then
     source ~/.bash_profile
 fi
@@ -18,20 +14,8 @@ if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 fi
 
-antigen use oh-my-zsh
-
-antigen bundle heroku
-antigen bundle command-not-found
-
-antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle tarruda/zsh-autosuggestions
-
-antigen bundle L3K0V/zsh-files
-# antigen theme L3K0V/zsh-files themes/vokela
-antigen theme ~/Workspace/zsh-files --no-local-clone themes/vokela
-
-antigen apply
+export ZSH="$(antibody home)/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh"
+source ~/.zsh_plugins.sh
 
 ##
 # Completion

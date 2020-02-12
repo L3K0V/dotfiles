@@ -1,0 +1,10 @@
+robbyrussell/oh-my-zsh
+robbyrussell/oh-my-zsh folder:plugins/common-aliases
+robbyrussell/oh-my-zsh folder:plugins/git
+zsh-users/zsh-completions
+zsh-users/zsh-autosuggestions
+zdharma/fast-syntax-highlighting
+zsh-users/zsh-history-substring-search
+tarruda/zsh-autosuggestions
+L3K0V/zsh-files
+L3K0V/zsh-files path:themes/vokela.zsh-theme

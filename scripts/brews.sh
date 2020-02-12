@@ -26,7 +26,7 @@ brew install certbot
 # Install Bash 4 and zsh
 brew install bash
 brew install zsh
-brew install antigen
+brew install getantibody/tap/antibody
 
 # Install environments
 brew install pyenv
