@@ -82,7 +82,7 @@ if which pyenv >/dev/null 2>&1; then
       eval "$(pyenv init -)"
   }
 
-  lazy_load pyenv_init pyenv python
+  lazy_load pyenv_init pyenv python pip
 fi
 
 if which pyenv-virtualenv-init >/dev/null 2>&1; then
