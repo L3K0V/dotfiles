@@ -28,6 +28,8 @@ brew install bash
 brew install zsh
 brew install getantibody/tap/antibody
 
+brew install mas
+
 # Install environments
 brew install pyenv
 brew install pyenv-virtualenv
@@ -51,6 +53,12 @@ brew install detox
 brew install swiftlint
 brew install diff-so-fancy
 
+# Homebrew Cask
+# http://caskroom.io
+#
+# Read https://github.com/Homebrew/homebrew-cask/issues/58046 if you ever see:
+# Error: Cask 'wireshark' definition is invalid: invalid 'depends_on macos' value: ">= :mountain_lion"
+
 # Install essential casks
 brew cask install java
 brew cask install homebrew/cask-versions/java8 # Needed for Android SDK
@@ -61,6 +69,7 @@ brew cask install brave-browser
 brew cask install skype
 brew cask install slack
 brew cask install transmission
+brew cask install 1password
 
 # IDEs
 brew cask install android-studio
@@ -79,7 +88,6 @@ brew cask install fastlane
 # Nordic
 brew cask install homebrew/cask-drivers/nordic-nrf-command-line-tools
 brew cask install homebrew/cask-drivers/nordic-nrf-connect
-brew cask install segger-embedded-studio-for-arm
 brew cask install segger-jlink
 brew tap ArmMbed/homebrew-formulae
 brew install arm-none-eabi-gcc
@@ -102,6 +110,15 @@ brew cask install keybase
 brew cask install alfred
 brew cask install agenda
 brew cask install coconutbattery
+
+# Font Casks
+# https://github.com/caskroom/homebrew-fonts
+
+tap 'homebrew/cask-fonts'
+
+cask 'font-open-sans'
+cask 'font-roboto'
+cask 'font-source-code-pro'
 
 # Remove outdated versions from the Cellar
 brew cleanup
