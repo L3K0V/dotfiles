@@ -96,7 +96,7 @@ nvm_init() {
   [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 }
 
-lazy_load nvm_init node npm
+lazy_load nvm_init node npm gulp ng
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
