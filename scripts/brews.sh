@@ -52,6 +52,7 @@ brew install highlight
 brew install detox
 brew install swiftlint
 brew install diff-so-fancy
+brew install tldr
 
 # Homebrew Cask
 # http://caskroom.io

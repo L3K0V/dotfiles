@@ -73,7 +73,7 @@ if which rbenv >/dev/null 2>&1; then
         eval "$(rbenv init -)"
     }
 
-    lazy_load rbenv_init rbenv bundle bundler gem irb rake ruby
+    lazy_load rbenv_init rbenv bundle bundler gem irb rake ruby pod
 fi
 
 
@@ -96,7 +96,7 @@ nvm_init() {
   [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 }
 
-lazy_load nvm_init node npm gulp ng
+lazy_load nvm_init node npm gulp ng yo
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
