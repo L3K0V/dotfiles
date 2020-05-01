@@ -53,6 +53,7 @@ brew install detox
 brew install swiftlint
 brew install diff-so-fancy
 brew install tldr
+brew install scrcpy
 
 # Homebrew Cask
 # http://caskroom.io
@@ -111,6 +112,7 @@ brew cask install keybase
 brew cask install alfred
 brew cask install agenda
 brew cask install coconutbattery
+brew cask install kap
 
 # Font Casks
 # https://github.com/caskroom/homebrew-fonts
