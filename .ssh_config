@@ -1,20 +1,29 @@
+
+
 Host *
- IdentityFile ~/.ssh/lekov_rsa
- AddKeysToAgent yes
- UseKeychain yes
+	IdentityFile ~/.ssh/lekov_rsa
+	AddKeysToAgent yes
+	UseKeychain yes
 
 Host L3K0V-Bitbucket
-	HostName bitbucket.org
 	User L3K0V
-	PreferredAuthentications publickey
+	HostName bitbucket.org
 	IdentityFile ~/.ssh/L3K0V-Bitbucket
-	UseKeychain yes
+	PreferredAuthentications publickey,keyboard-interactive,password
 	AddKeysToAgent yes
+	UseKeychain yes
 
 Host DigitalLights
-	HostName gitlab.com
 	User asen.lekov@lights.digital
-	PreferredAuthentications publickey
+	HostName gitlab.com
 	IdentityFile ~/.ssh/asen.lekov@lights.digital-GitLab
-	UseKeychain yes
+	PreferredAuthentications publickey,keyboard-interactive,password
 	AddKeysToAgent yes
+	UseKeychain yes
+
+Host IAV
+	HostName vw.gitlab.iav.com
+	IdentityFile ~/.ssh/iav_vw
+	PreferredAuthentications publickey,keyboard-interactive,password
+	AddKeysToAgent yes
+	UseKeychain yes
