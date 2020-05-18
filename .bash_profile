@@ -1,37 +1,18 @@
-# lazy_loader.sh
-# Copyright 2018 Terrance Kennedy
-# MIT License, http://www.opensource.org/licenses/mit-license.php
-
-# Defer initialization steps until one or more trigger commands is invoked.
-#
-# Usage: lazy_load <initialization_function> <cmd1> [ <cmd2> [..] ]
-#
-# Given an initialization_function and a list of commands that depend on that
-# initialization_function, lazy_load creates a stub for each command that runs
-# the initialization_function before invoking the command. It also unloads the
-# stub, so the next time the command is ran, it's ran directly.
 function lazy_load() {
     if [ $# -lt 2 ]; then
         echo "Usage: lazy_load <initialization_function> <cmd> [ <cmd2> [..] ]"
         return
     fi
 
-    # name of the function that will be called to initialize the tool
     local init_func=$1
     shift
-    # one or more commands to trigger initialization of the tool
     local cmd_list=( "$@" )
 
-    # create a stub function for each command
-    for cmd in "${cmd_list[@]}"; do
-        # define cmd as a function
+    for cmd in "${cmd_list[@]}"; do        
         eval "function $cmd() {
             echo \"Lazy loading $cmd...\"
-            # destroy all stub functions related to init_func
             unset -f ${cmd_list[@]}
-            # run init_func
             $init_func
-            # run the command this stub was wrapping
             $cmd \$@
         }"
     done
@@ -73,7 +54,7 @@ if which rbenv >/dev/null 2>&1; then
         eval "$(rbenv init -)"
     }
 
-    lazy_load rbenv_init rbenv bundle bundler gem irb rake ruby pod
+    lazy_load rbenv_init rbenv bundle bundler gem irb rake rails ruby pod
 fi
 
 
@@ -96,7 +77,7 @@ nvm_init() {
   [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 }
 
-lazy_load nvm_init node npm gulp ng yo
+lazy_load nvm_init nvm node npm gulp ng yo ui5 gulp yarn
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
