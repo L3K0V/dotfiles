@@ -64,6 +64,7 @@ brew install scrcpy
 # Install essential casks
 brew cask install java
 brew cask install homebrew/cask-versions/java8 # Needed for Android SDK
+brew cask install homebrew/cask-versions/java11 # Optional for backend development
 
 # Internet
 brew cask install google-chrome
