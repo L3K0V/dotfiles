@@ -94,6 +94,7 @@ brew cask install homebrew/cask-drivers/nordic-nrf-connect
 brew cask install segger-jlink
 brew tap ArmMbed/homebrew-formulae
 brew install arm-none-eabi-gcc
+brew install dfu-util
 
 # Virtualization
 brew cask install docker
