@@ -82,3 +82,7 @@ from IPython.display import display
 ```
 
 https://github.com/jf/rbenv-gemset#usage
+
+```
+$ antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
+```

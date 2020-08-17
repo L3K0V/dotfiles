@@ -26,9 +26,8 @@ fi
 
 export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
 
-export PATH="/usr/sbin:/sbin:$PATH"              # 8
-export PATH="/usr/bin:/bin:$PATH"                # 7
-export PATH="$HOME/.fastlane/bin:$PATH"          # 6
+export PATH="/usr/sbin:/sbin:$PATH"              # 7
+export PATH="/usr/bin:/bin:$PATH"                # 6
 export PATH="$HOME/opt/local/bin:$PATH"          # 5
 export PATH="/usr/local/bin:$PATH"               # 4
 export PYENV_ROOT="$HOME/.pyenv"                 # 3
