@@ -55,6 +55,11 @@ brew install diff-so-fancy
 brew install tldr
 brew install scrcpy
 
+brew install speedtest-cli
+brew install archey
+brew install trash
+brew install wifi-password
+
 # Homebrew Cask
 # http://caskroom.io
 #
