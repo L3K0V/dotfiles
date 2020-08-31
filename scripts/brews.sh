@@ -19,12 +19,11 @@ brew install findutils
 
 # GPG Signing
 brew install gpg
-brew install gpg-agent
 brew install pinentry-mac
 brew install certbot
 
 # Install Bash 4 and zsh
-brew install bash
+brew install bash-completion@2
 brew install zsh
 brew install getantibody/tap/antibody
 
@@ -36,27 +35,22 @@ brew install pyenv-virtualenv
 brew install rbenv
 brew install nvm
 
-mkdir ~/.nvm
-
 brew install heroku/brew/heroku
 
 # Install essential homebrews
 brew install vim
-brew install redis
 brew install tree
 brew install wget
 brew install parallel
-brew install webp
 brew install git
+brew install ack
 brew install highlight
 brew install detox
-brew install swiftlint
 brew install diff-so-fancy
 brew install tldr
 brew install scrcpy
 
 brew install speedtest-cli
-brew install archey
 brew install trash
 brew install wifi-password
 
@@ -67,9 +61,11 @@ brew install wifi-password
 # Error: Cask 'wireshark' definition is invalid: invalid 'depends_on macos' value: ">= :mountain_lion"
 
 # Install essential casks
-brew cask install java
-brew cask install homebrew/cask-versions/java8 # Needed for Android SDK
-brew cask install homebrew/cask-versions/java11 # Optional for backend development
+brew cask install adoptopenjdk
+
+brew tap AdoptOpenJDK/openjdk
+brew cask install adoptopenjdk/openjdk/adoptopenjdk8 # Needed for Android SDK
+brew cask install adoptopenjdk/openjdk/adoptopenjdk14 # Optional for backend development
 
 # Internet
 brew cask install google-chrome
@@ -83,6 +79,7 @@ brew cask install 1password
 brew cask install android-studio
 brew cask install visual-studio-code
 brew cask install clion # For Embedded development
+brew cask install intellij-idea-ce
 
 # Development
 brew cask install android-sdk
@@ -90,8 +87,6 @@ brew cask install android-ndk
 brew cask install github
 brew cask install sourcetree
 brew cask install sketch
-brew cask install zeplin
-brew cask install fastlane
 
 # Nordic
 brew cask install homebrew/cask-drivers/nordic-nrf-command-line-tools
@@ -109,6 +104,9 @@ brew cask install parallels-desktop
 brew cask install spotify
 brew cask install iina
 
+brew cask install microsoft-office
+brew cask install microsoft-teams
+
 # Utilities
 brew cask install setapp
 brew cask install flux
@@ -124,11 +122,12 @@ brew cask install kap
 # Font Casks
 # https://github.com/caskroom/homebrew-fonts
 
-tap 'homebrew/cask-fonts'
+brew tap homebrew/cask-fonts
 
-cask 'font-open-sans'
-cask 'font-roboto'
-cask 'font-source-code-pro'
+brew cask install font-open-sans
+brew cask install font-roboto
+brew cask install font-hack-nerd-font
+brew cask install font-sauce-code-pro-nerd-font
 
 # Remove outdated versions from the Cellar
 brew cleanup
