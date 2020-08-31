@@ -14,6 +14,7 @@
     ~/.bash_aliases:          .bash_aliases
     ~/.bash_profile:          .bash_profile
     ~/.gitconfig:             .gitconfig
+    ~/Workspace/dl/.gitconfig: .gitconfig-dl
     ~/.gitignore_global:      .gitignore_global
     ~/.gemrc:                 .gemrc
     ~/.vimrc:                 .vimrc
@@ -21,13 +22,12 @@
     ~/.gnupg/gpg.conf:        .gpg.conf
     ~/.gnupg/gpg-agent.conf:  .gpg-agent.conf
     ~/com.googlecode.iterm2.plist: com.googlecode.iterm2.plist
-    ~/bin:
-      path:       bin/
-      backup:     ./backup
 
 - clean: ['~']
 
 - shell:
   - ["mkdir -p  ~/.zsh", "Checking folder structure exists"]
+  - ["mkdir -p  ~/Workspace/dl", "Create DigitalLights workspace folder"]
+  - ["mkdir -p  ~/Workspace/dodi", "Create Dodi workspace folder"]
   - [git submodule update --init --recursive, Installing submodules...]
   - [git submodule foreach git pull origin master, Updating submodules...]
