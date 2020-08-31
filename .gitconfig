@@ -3,6 +3,9 @@
 	email = asenlekoff@gmail.com
 	signingkey = 6C0C9DCD8A46C061
 
+[includeIf "gitdir:~/Workspace/dl/"]
+    path = ~/Workspace/dl/.gitconfig
+
 [alias]
   tags = tag -l
   branches = branch -a
@@ -39,7 +42,6 @@
   alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\t=> \\2/' | sort
   squash = !git rebase --interactive --autosquash HEAD~$@
 
-  lightsup = config user.email "asen.lekov@lights.digital"
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = vim
