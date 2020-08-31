@@ -25,14 +25,11 @@ if [ -x /usr/libexec/path_helper ]; then
 fi
 
 export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
+export PYENV_ROOT="$HOME/.pyenv"
+export NVM_DIR="$HOME/.nvm"
 
-export PATH="/usr/sbin:/sbin:$PATH"              # 7
-export PATH="/usr/bin:/bin:$PATH"                # 6
-export PATH="$HOME/opt/local/bin:$PATH"          # 5
-export PATH="/usr/local/bin:$PATH"               # 4
-export PYENV_ROOT="$HOME/.pyenv"                 # 3
-export NVM_DIR="$HOME/.nvm"                      # 2
-export PATH="$PYENV_ROOT/bin:$PATH"              # 1
+export PATH="/usr/local/sbin:$PATH"
+export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="$ANDROID_SDK_ROOT/platform-tools:$PATH"
 
 # Prefer GNU coreutils and findutils commands with their real names
@@ -44,9 +41,10 @@ export MANPATH="/usr/local/opt/findutils/libexec/gnuman:$MANPATH"
 
 # Add my bin to the path
 [ -d  "$HOME/bin" ] && PATH="$PATH:$HOME/bin"
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 # if rbenv is present, configure it for use
-if which rbenv >/dev/null 2>&1; then
+if hash rbenv 2> /dev/null; then
     export PATH="$HOME/.rbenv/bin:$PATH"
 
     rbenv_init() {
@@ -57,26 +55,24 @@ if which rbenv >/dev/null 2>&1; then
 fi
 
 
-if which pyenv >/dev/null 2>&1; then
+if hash pyenv 2> /dev/null; then
   pyenv_init() {
       eval "$(pyenv init -)"
+      eval "$(pyenv virtualenv-init -)"
   }
 
   lazy_load pyenv_init pyenv python pip
 fi
 
-if which pyenv-virtualenv-init >/dev/null 2>&1; then
-  pyenv-virtualenv-init() {
-    eval "$(command pyenv-virtualenv-init -)"
+if [ -f "/usr/local/opt/nvm/nvm.sh" ]; then
+  nvm_init() {
+      [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+      [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
   }
+
+  lazy_load nvm_init nvm node npm gulp ng yo ui5 yarn
 fi
 
-nvm_init() {
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
-}
-
-lazy_load nvm_init nvm node npm gulp ng yo ui5 gulp yarn
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then

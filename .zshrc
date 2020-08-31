@@ -14,6 +14,9 @@ if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 fi
 
+# Workaround for insecure completions on multiuser setup
+export ZSH_DISABLE_COMPFIX=true
+
 export ANTIBODY_HOME=~/Libary/antibody
 export ZSH="$(antibody home)/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh"
 source ~/.zsh_plugins.sh
@@ -80,5 +83,6 @@ zshaddhistory() {
        && ${cmd} != xdg-open
        && ${cmd} != traceroute
        && ${cmd} != speedtest-cli
+       && ${cmd} != brew
     ]]
 }
