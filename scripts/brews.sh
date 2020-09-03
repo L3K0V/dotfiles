@@ -65,7 +65,7 @@ brew cask install adoptopenjdk
 
 brew tap AdoptOpenJDK/openjdk
 brew cask install adoptopenjdk/openjdk/adoptopenjdk8 # Needed for Android SDK
-brew cask install adoptopenjdk/openjdk/adoptopenjdk14 # Optional for backend development
+brew cask install adoptopenjdk/openjdk/adoptopenjdk11 # Optional for backend development
 
 # Internet
 brew cask install google-chrome
@@ -99,6 +99,7 @@ brew install dfu-util
 # Virtualization
 brew cask install docker
 brew cask install parallels-desktop
+brew cask install kitematic
 
 # Media
 brew cask install spotify
