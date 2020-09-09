@@ -70,16 +70,14 @@ brew cask install adoptopenjdk/openjdk/adoptopenjdk11 # Optional for backend dev
 # Internet
 brew cask install google-chrome
 brew cask install brave-browser
-brew cask install skype
 brew cask install slack
-brew cask install transmission
 brew cask install 1password
 
 # IDEs
 brew cask install android-studio
 brew cask install visual-studio-code
+brew cask install intellij-idea
 brew cask install clion # For Embedded development
-brew cask install intellij-idea-ce
 
 # Development
 brew cask install android-sdk
@@ -110,7 +108,6 @@ brew cask install microsoft-teams
 
 # Utilities
 brew cask install setapp
-brew cask install flux
 brew cask install the-unarchiver
 brew cask install iterm2
 brew cask install reflector
@@ -120,6 +117,7 @@ brew cask install agenda
 brew cask install coconutbattery
 brew cask install kap
 brew cask install rectangle
+brew cask install ledger-live
 
 # Font Casks
 # https://github.com/caskroom/homebrew-fonts
