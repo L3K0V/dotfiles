@@ -119,6 +119,7 @@ brew cask install alfred
 brew cask install agenda
 brew cask install coconutbattery
 brew cask install kap
+brew cask install rectangle
 
 # Font Casks
 # https://github.com/caskroom/homebrew-fonts
