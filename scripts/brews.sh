@@ -54,6 +54,10 @@ brew install speedtest-cli
 brew install trash
 brew install wifi-password
 
+brew install cocoapods
+brew install swiftlint
+brew install ktlint
+
 # Homebrew Cask
 # http://caskroom.io
 #
