@@ -22,6 +22,8 @@
     ~/.gnupg/gpg.conf:        .gpg.conf
     ~/.gnupg/gpg-agent.conf:  .gpg-agent.conf
     ~/com.googlecode.iterm2.plist: com.googlecode.iterm2.plist
+    ~/.android/debug.keystore: debug.keystore
+
 
 - clean: ['~']
 
@@ -29,5 +31,6 @@
   - ["mkdir -p  ~/.zsh", "Checking folder structure exists"]
   - ["mkdir -p  ~/Workspace/dl", "Create DigitalLights workspace folder"]
   - ["mkdir -p  ~/Workspace/dodi", "Create Dodi workspace folder"]
+  - ["mkdir -p ~/.android", "Create Android folder"]
   - [git submodule update --init --recursive, Installing submodules...]
   - [git submodule foreach git pull origin master, Updating submodules...]
