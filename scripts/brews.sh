@@ -65,73 +65,73 @@ brew install ktlint
 # Error: Cask 'wireshark' definition is invalid: invalid 'depends_on macos' value: ">= :mountain_lion"
 
 # Install essential casks
-brew cask install adoptopenjdk
+brew install --cask adoptopenjdk
 
 brew tap AdoptOpenJDK/openjdk
-brew cask install adoptopenjdk/openjdk/adoptopenjdk8 # Needed for Android SDK
-brew cask install adoptopenjdk/openjdk/adoptopenjdk11 # Optional for backend development
+brew install --cask adoptopenjdk/openjdk/adoptopenjdk8 # Needed for Android SDK
+brew install --cask adoptopenjdk/openjdk/adoptopenjdk11 # Optional for backend development
 
 # Internet
-brew cask install google-chrome
-brew cask install brave-browser
-brew cask install slack
-brew cask install 1password
+brew install --cask google-chrome
+brew install --cask brave-browser
+brew install --cask slack
+brew install --cask 1password
 
 # IDEs
-brew cask install android-studio
-brew cask install visual-studio-code
-brew cask install intellij-idea
-brew cask install clion # For Embedded development
+brew install --cask android-studio
+brew install --cask visual-studio-code
+brew install --cask intellij-idea
+brew install --cask clion # For Embedded development
 
 # Development
-brew cask install android-sdk
-brew cask install android-ndk
-brew cask install github
-brew cask install sourcetree
-brew cask install sketch
+brew install --cask android-sdk
+brew install --cask android-ndk
+brew install --cask github
+brew install --cask sourcetree
+brew install --cask sketch
 
 # Nordic
-brew cask install homebrew/cask-drivers/nordic-nrf-command-line-tools
-brew cask install homebrew/cask-drivers/nordic-nrf-connect
-brew cask install segger-jlink
+brew install --cask homebrew/cask-drivers/nordic-nrf-command-line-tools
+brew install --cask homebrew/cask-drivers/nordic-nrf-connect
+brew install --cask segger-jlink
 brew tap ArmMbed/homebrew-formulae
 brew install arm-none-eabi-gcc
 brew install dfu-util
 
 # Virtualization
-brew cask install docker
-brew cask install parallels-desktop
-brew cask install kitematic
+brew install --cask docker
+brew install --cask parallels-desktop
+brew install --cask kitematic
 
 # Media
-brew cask install spotify
-brew cask install iina
+brew install --cask spotify
+brew install --cask iina
 
-brew cask install microsoft-office
-brew cask install microsoft-teams
+brew install --cask microsoft-office
+brew install --cask microsoft-teams
 
 # Utilities
-brew cask install setapp
-brew cask install the-unarchiver
-brew cask install iterm2
-brew cask install reflector
-brew cask install keybase
-brew cask install alfred
-brew cask install agenda
-brew cask install coconutbattery
-brew cask install kap
-brew cask install rectangle
-brew cask install ledger-live
+brew install --cask setapp
+brew install --cask the-unarchiver
+brew install --cask iterm2
+brew install --cask reflector
+brew install --cask keybase
+brew install --cask alfred
+brew install --cask agenda
+brew install --cask coconutbattery
+brew install --cask kap
+brew install --cask rectangle
+brew install --cask ledger-live
 
 # Font Casks
 # https://github.com/caskroom/homebrew-fonts
 
 brew tap homebrew/cask-fonts
 
-brew cask install font-open-sans
-brew cask install font-roboto
-brew cask install font-hack-nerd-font
-brew cask install font-sauce-code-pro-nerd-font
+brew install --cask font-open-sans
+brew install --cask font-roboto
+brew install --cask font-hack-nerd-font
+brew install --cask font-sauce-code-pro-nerd-font
 
 # Remove outdated versions from the Cellar
 brew cleanup
