@@ -34,6 +34,7 @@ brew install pyenv
 brew install pyenv-virtualenv
 brew install rbenv
 brew install nvm
+brew install asdf
 
 brew install heroku/brew/heroku
 
@@ -130,6 +131,7 @@ brew tap homebrew/cask-fonts
 
 brew install --cask font-open-sans
 brew install --cask font-roboto
+brew install --cask font-ubuntu
 brew install --cask font-hack-nerd-font
 brew install --cask font-sauce-code-pro-nerd-font
 
