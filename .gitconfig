@@ -51,6 +51,9 @@
 [apply]
 	whitespace = nowarn
 
+[fetch]
+    prune = true
+
 [push]
     default = current
 
