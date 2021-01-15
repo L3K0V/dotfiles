@@ -1,39 +1,40 @@
 - defaults:
-      link:
-          create: true
-          relink: true
-          force: true
-          replace: true
+        link:
+              create: true
+              relink: true
+              force: true
+              replace: true
 
 - link:
-      ~/.dotfiles: ""
-      ~/.zshrc: .zshrc
-      ~/.zsh_plugins.sh: .zsh_plugins_snapshot
-      ~/.zsh_plugins.txt: .zsh_plugins
-      ~/.p10k.zsh: .p10k.zsh
-      ~/.bashrc: .bashrc
-      ~/.bash_aliases: .bash_aliases
-      ~/.bash_profile: .bash_profile
-      ~/.gitconfig: .gitconfig
-      ~/Workspace/dl/.gitconfig: .gitconfig-dl
-      ~/.gitignore_global: .gitignore_global
-      ~/.gemrc: .gemrc
-      ~/.vimrc: .vimrc
-      ~/.ssh/config: .ssh_config
-      ~/.gnupg/gpg.conf: .gpg.conf
-      ~/.gnupg/gpg-agent.conf: .gpg-agent.conf
-      ~/com.googlecode.iterm2.plist: com.googlecode.iterm2.plist
-      ~/.android/debug.keystore: debug.keystore
-      ~/.default-gems: .default-gems
-      ~/.default-npm-packages: .default-npm-packages
-      ~/.default-python-packages: .default-python-packages
+        ~/.dotfiles: ""
+        ~/.zshrc: .zshrc
+        ~/.zsh_plugins.sh: .zsh_plugins_snapshot
+        ~/.zsh_plugins.txt: .zsh_plugins
+        ~/.p10k.zsh: .p10k.zsh
+        ~/.bashrc: .bashrc
+        ~/.bash_aliases: .bash_aliases
+        ~/.bash_profile: .bash_profile
+        ~/.gitconfig: .gitconfig
+        ~/Workspace/dl/.gitconfig: .gitconfig-dl
+        ~/.gitignore_global: .gitignore_global
+        ~/.gemrc: .gemrc
+        ~/.vimrc: .vimrc
+        ~/.ssh/config: .ssh_config
+        ~/.gnupg/gpg.conf: .gpg.conf
+        ~/.gnupg/gpg-agent.conf: .gpg-agent.conf
+        ~/com.googlecode.iterm2.plist: com.googlecode.iterm2.plist
+        ~/.iterm2_shell_integration.zsh: .iterm2_shell_integration.zsh
+        ~/.android/debug.keystore: debug.keystore
+        ~/.default-gems: .default-gems
+        ~/.default-npm-packages: .default-npm-packages
+        ~/.default-python-packages: .default-python-packages
 
 - clean: ["~"]
 
 - shell:
-      - ["mkdir -p  ~/.zsh", "Checking folder structure exists"]
-      - ["mkdir -p  ~/Workspace/dl", "Create DigitalLights workspace folder"]
-      - ["mkdir -p  ~/Workspace/dodi", "Create Dodi workspace folder"]
-      - ["mkdir -p ~/.android", "Create Android folder"]
-      - [git submodule update --init --recursive, Installing submodules...]
-      - [git submodule foreach git pull origin master, Updating submodules...]
+        - ["mkdir -p  ~/.zsh", "Checking folder structure exists"]
+        - ["mkdir -p  ~/Workspace/dl", "Create DigitalLights workspace folder"]
+        - ["mkdir -p  ~/Workspace/dodi", "Create Dodi workspace folder"]
+        - ["mkdir -p ~/.android", "Create Android folder"]
+        - [git submodule update --init --recursive, Installing submodules...]
+        - [git submodule foreach git pull origin master, Updating submodules...]
