@@ -2,6 +2,8 @@ if [ -f ~/.bash_profile ]; then
     source ~/.bash_profile
 fi
 
+. $(brew --prefix asdf)/asdf.sh
+
 AGENT_SOCK=$(gpgconf --list-dirs | grep agent-socket | cut -d : -f 2)
 
 if [[ ! -S $AGENT_SOCK ]]; then
@@ -19,6 +21,7 @@ export ZSH_DISABLE_COMPFIX=true
 
 export ANTIBODY_HOME=~/Libary/antibody
 export ZSH="$(antibody home)/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh"
+
 source ~/.zsh_plugins.sh
 
 ##

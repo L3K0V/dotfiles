@@ -30,10 +30,6 @@ brew install getantibody/tap/antibody
 brew install mas
 
 # Install environments
-brew install pyenv
-brew install pyenv-virtualenv
-brew install rbenv
-brew install nvm
 brew install asdf
 
 brew install heroku/brew/heroku

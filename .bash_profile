@@ -44,35 +44,33 @@ export MANPATH="/usr/local/opt/findutils/libexec/gnuman:$MANPATH"
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 # if rbenv is present, configure it for use
-if hash rbenv 2> /dev/null; then
-    export PATH="$HOME/.rbenv/bin:$PATH"
+# if hash rbenv 2> /dev/null; then
+#     export PATH="$HOME/.rbenv/bin:$PATH"
 
-    rbenv_init() {
-        eval "$(rbenv init -)"
-    }
+#     rbenv_init() {
+#         eval "$(rbenv init -)"
+#     }
 
-    lazy_load rbenv_init rbenv bundle bundler gem irb rake rails ruby pod
-fi
+#     lazy_load rbenv_init rbenv bundle bundler gem irb rake rails ruby pod
+# fi
 
+# if hash pyenv 2> /dev/null; then
+#   pyenv_init() {
+#       eval "$(pyenv init -)"
+#       eval "$(pyenv virtualenv-init -)"
+#   }
 
-if hash pyenv 2> /dev/null; then
-  pyenv_init() {
-      eval "$(pyenv init -)"
-      eval "$(pyenv virtualenv-init -)"
-  }
+#   lazy_load pyenv_init pyenv python pip
+# fi
 
-  lazy_load pyenv_init pyenv python pip
-fi
+# if [ -f "/usr/local/opt/nvm/nvm.sh" ]; then
+#   nvm_init() {
+#       [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+#       [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+#   }
 
-if [ -f "/usr/local/opt/nvm/nvm.sh" ]; then
-  nvm_init() {
-      [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-      [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
-  }
-
-  lazy_load nvm_init nvm node npm gulp ng yo ui5 yarn
-fi
-
+#   lazy_load nvm_init nvm node npm gulp ng yo ui5 yarn
+# fi
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
