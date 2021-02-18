@@ -86,3 +86,11 @@ https://github.com/jf/rbenv-gemset#usage
 ```
 $ antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
 ```
+
+
+### AdGuard
+
+#### Filters
+
+- https://oisd.nl/
+- https://hblock.molinero.dev
