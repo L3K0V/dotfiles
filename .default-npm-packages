@@ -3,3 +3,5 @@ yarn
 @ui5/cli
 generator-easy-ui5
 gatsby-cli
+alfred-updater
+@bchatard/alfred-jetbrains
