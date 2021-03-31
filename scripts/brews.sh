@@ -119,6 +119,7 @@ brew install --cask coconutbattery
 brew install --cask kap
 brew install --cask rectangle
 brew install --cask ledger-live
+brew install --cask surfshark
 
 # Font Casks
 # https://github.com/caskroom/homebrew-fonts
