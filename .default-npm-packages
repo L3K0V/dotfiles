@@ -4,4 +4,6 @@ yarn
 generator-easy-ui5
 gatsby-cli
 alfred-updater
+alfred-xcode
+alfred-code
 @bchatard/alfred-jetbrains
