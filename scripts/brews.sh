@@ -71,7 +71,6 @@ brew install --cask adoptopenjdk/openjdk/adoptopenjdk11 # Optional for backend d
 # Internet
 brew install --cask google-chrome
 brew install --cask brave-browser
-brew install --cask slack
 brew install --cask 1password
 
 # IDEs
@@ -98,7 +97,6 @@ brew install dfu-util
 # Virtualization
 brew install --cask docker
 brew install --cask parallels-desktop
-brew install --cask kitematic
 
 # Media
 brew install --cask spotify
@@ -131,6 +129,7 @@ brew install --cask font-roboto
 brew install --cask font-ubuntu
 brew install --cask font-hack-nerd-font
 brew install --cask font-sauce-code-pro-nerd-font
+brew install --cask font-fira-code
 
 # Remove outdated versions from the Cellar
 brew cleanup
