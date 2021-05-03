@@ -4,6 +4,8 @@ if [ -x /usr/libexec/path_helper ]; then
     eval `/usr/libexec/path_helper -s`
 fi
 
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
 export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
 
 export PATH="/usr/local/sbin:$PATH"
