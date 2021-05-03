@@ -10,8 +10,8 @@ asdf install ruby 2.7.2
 asdf global ruby 2.7.2
 
 asdf plugin-add flutter
-asdf install flutter 1.22.5
-asdf global flutter 1.22.5
+asdf install flutter 2.0.6-stable
+asdf global flutter 2.0.6-stable
 
 asdf plugin-add python
 asdf install python 3.9.1
