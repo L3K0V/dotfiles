@@ -1,6 +1,7 @@
 # Configuration and Setup Swissknife
 
 ## Getting started
+
 Clone this repository
 
 ```bash
@@ -8,6 +9,7 @@ $ git clone https://github.com/L3K0V/dotfiles.git
 ```
 
 ### Initial setup
+
 Before setup the dotfiles maybe would be good to setup the environment.
 
 Go to `scripts` folder
@@ -87,10 +89,18 @@ https://github.com/jf/rbenv-gemset#usage
 $ antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
 ```
 
-
 ### AdGuard
 
 #### Filters
 
 - https://oisd.nl/
 - https://hblock.molinero.dev
+
+## Xcode CLI tools
+
+Reinstall them using:
+
+```
+$ sudo rm -rf /Library/Developer/CommandLineTools
+$ sudo xcode-select --install
+```
