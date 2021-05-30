@@ -10,6 +10,7 @@
         ~/.zshrc: .zshrc
         ~/.zsh_plugins.sh: .zsh_plugins_snapshot
         ~/.zsh_plugins.txt: .zsh_plugins
+        ~/.zprofile: .zprofile
         ~/.p10k.zsh: .p10k.zsh
         ~/.bashrc: .bashrc
         ~/.bash_aliases: .bash_aliases

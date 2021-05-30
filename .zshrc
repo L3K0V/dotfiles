@@ -99,5 +99,6 @@ zshaddhistory() {
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 . $(brew --prefix asdf)/asdf.sh
+
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
