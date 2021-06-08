@@ -1,6 +1,6 @@
-robbyrussell/oh-my-zsh
-robbyrussell/oh-my-zsh folder:plugins/common-aliases
-robbyrussell/oh-my-zsh folder:plugins/git
+ohmyzsh/ohmyzsh
+ohmyzsh/ohmyzsh path:plugins/common-aliases
+ohmyzsh/ohmyzsh path:plugins/git
 zsh-users/zsh-completions
 zsh-users/zsh-autosuggestions
 zdharma/fast-syntax-highlighting

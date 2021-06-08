@@ -25,7 +25,7 @@ fi
 export ZSH_DISABLE_COMPFIX=true
 
 export ANTIBODY_HOME=~/Libary/antibody
-export ZSH="$(antibody home)/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh"
+export ZSH="$(antibody home)/https-COLON--SLASH--SLASH-github.com-SLASH-ohmyzsh-SLASH-oh-my-zsh"
 
 source ~/.zsh_plugins.sh
 
