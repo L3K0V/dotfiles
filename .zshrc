@@ -26,6 +26,7 @@ export ZSH_DISABLE_COMPFIX=true
 
 export ANTIBODY_HOME=~/Libary/antibody
 export ZSH="$(antibody home)/https-COLON--SLASH--SLASH-github.com-SLASH-ohmyzsh-SLASH-oh-my-zsh"
+fpath+=($ZSH/plugins/docker)
 
 source ~/.zsh_plugins.sh
 
@@ -102,3 +103,4 @@ zshaddhistory() {
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+ autoload -U compinit && compinit
